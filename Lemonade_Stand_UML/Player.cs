@@ -63,7 +63,7 @@ namespace Lemonade_Stand_UML
         public void SetLemonsQty()
         {
             Console.WriteLine("how many lemons per pitcher would you like to use?");
-            Inventory.Lemons - Console.ReadLine();
+            //Inventory.Lemons - Console.ReadLine();
 
             throw new System.NotImplementedException();
         }

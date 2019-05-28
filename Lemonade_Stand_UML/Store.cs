@@ -13,13 +13,7 @@ namespace Lemonade_Stand_UML
         public int PriceOfPaperCups;
 
         //Constructors
-        public Store(int PriceOfIce, int PriceOfLemons, int PriceOfSugar, int PriceOfPaperCups)
-        { 
-            this.PriceOfIce = PriceOfIce;
-            this.PriceOfLemons = PriceOfLemons;
-            this.PriceOfSugar = PriceOfSugar;
-            this.PriceOfPaperCups = PriceOfPaperCups;
-        }
+
 
         public void SellIce()
         {

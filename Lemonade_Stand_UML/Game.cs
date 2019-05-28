@@ -19,6 +19,8 @@ namespace Lemonade_Stand_UML
             set
             {
             }
+
+
         }
 
         public Store Store
@@ -26,6 +28,7 @@ namespace Lemonade_Stand_UML
             get => default;
             set
             {
+
             }
         }
 
@@ -39,7 +42,14 @@ namespace Lemonade_Stand_UML
 
         public void SetGameLength()
         {
-            List<int>numberOfDays;
+            this.numberOfDays = new List<int>();
+            numberOfDays.Add(1);
+            numberOfDays.Add(2);
+            numberOfDays.Add(3);
+            numberOfDays.Add(4);
+            numberOfDays.Add(5);
+            numberOfDays.Add(6);
+            numberOfDays.Add(7);
 
             throw new System.NotImplementedException();
         }
