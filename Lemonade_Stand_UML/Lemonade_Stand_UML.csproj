@@ -43,11 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer.cs" />
+    <Compile Include="Customer1.cs" />
+    <Compile Include="Day.cs" />
+    <Compile Include="example.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="Lemonade.cs" />
+    <Compile Include="Michael.cs" />
+    <Compile Include="Mikey.cs" />
+    <Compile Include="Nate.cs" />
+    <Compile Include="Nevin.cs" />
+    <Compile Include="Paul.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shee.cs" />
+    <Compile Include="Store.cs" />
+    <Compile Include="UserInterface.cs" />
+    <Compile Include="Weather.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

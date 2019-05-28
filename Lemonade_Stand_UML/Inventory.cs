@@ -5,19 +5,11 @@ using System.Text;
 
 namespace Lemonade_Stand_UML
 {
-    public class Inventory : Player
+    public class Inventory
     {
-        private int PaperCups;
-        private int Ice;
-        private int Lemons;
-        private int Sugar;
-
-        public Store Store
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public int PaperCups;
+        public int Ice;
+        public int Lemons;
+        public int Sugar;
     }
 }

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Lemonade_Stand_UML
 {
-    public interface UserInterface
+    class UserInterface
     {
-        Game Game { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Lemonade_Stand_UML
 {
-    public class Steve : Customer
+    public class SourCustomer : Customer
     {
     }
 }

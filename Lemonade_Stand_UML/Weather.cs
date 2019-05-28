@@ -5,40 +5,17 @@ using System.Text;
 
 namespace Lemonade_Stand_UML
 {
-    public class Weather : Day
+    public class Weather
     {
-        private int temperature;
-        private int forecast;
+        public int temperature;
+        public int forecast;
 
-        public Customer Customer
+        public void SetTemperature()
         {
-            get => default;
-            set
-            {
-            }
+            throw new System.NotImplementedException();
         }
 
         public void SetForecast()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void OvercastWeather()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void SunnyWeather()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void HazyWeather()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void RainyWeather()
         {
             throw new System.NotImplementedException();
         }

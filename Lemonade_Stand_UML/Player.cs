@@ -5,14 +5,15 @@ using System.Text;
 
 namespace Lemonade_Stand_UML
 {
-    public class Player : Game
+    public abstract class Player
     {
-        private int Inventory;
-        private int Popularity;
-        private int Cash;
-        private int CustomerSatisfaction;
+        
 
-        public Lemonade Lemonade
+        public int Cash;
+        public int Lemonade;
+        public int InventoryItems;
+
+        public PitcherOfLemonade PitcherOfLemonade
         {
             get => default;
             set
@@ -20,8 +21,27 @@ namespace Lemonade_Stand_UML
             }
         }
 
+        public Inventory Inventory
+        {
+            get => default;
+            set
+            {
+                Inventory.PaperCups = 0;
+                Inventory.Lemons = 0;
+                Inventory.Sugar = 0;
+                Inventory.Ice = 0;
+            }
+        }
+
+        public void BuyInventory()
+        {
+
+            throw new System.NotImplementedException();
+        }
+
         public void BuyPaperCups()
         {
+            
             throw new System.NotImplementedException();
         }
 
@@ -42,27 +62,41 @@ namespace Lemonade_Stand_UML
 
         public void SetLemonsQty()
         {
+            Console.WriteLine("how many lemons per pitcher would you like to use?");
+            Inventory.Lemons - Console.ReadLine();
+
             throw new System.NotImplementedException();
         }
 
         public void SetSugarQty()
         {
+            Console.WriteLine("How many cups of sugar per pitcher would you like to use");
             throw new System.NotImplementedException();
         }
 
         public void SetIceQty()
         {
+            Console.WriteLine("How many ice cubes per cup would you like to use?");
             throw new System.NotImplementedException();
         }
 
         public void SetPrice()
         {
+            Console.WriteLine("what is the price per cup of lemonade?");
             throw new System.NotImplementedException();
         }
 
         public void MixLemonade()
         {
+
             throw new System.NotImplementedException();
         }
+
+        public void SellLemonade()
+        {
+            throw new System.NotImplementedException();
+        }
+
+
     }
 }

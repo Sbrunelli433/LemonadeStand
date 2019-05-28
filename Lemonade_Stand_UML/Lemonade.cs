@@ -5,10 +5,12 @@ using System.Text;
 
 namespace Lemonade_Stand_UML
 {
-    public class Lemonade
+    public class PitcherOfLemonade
     {
-        private int Sourness;
-        private int Sweetness;
-        private int CupsPerPitcher;
+        public int Sourness;
+        public int Sweetness;
+        public int CupsPerPitcher;
     }
+
+
 }
