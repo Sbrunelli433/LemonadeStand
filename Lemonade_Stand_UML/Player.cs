@@ -9,16 +9,24 @@ namespace Lemonade_Stand_UML
     {
         
 
-        public int Cash;
-        public int Lemonade;
-        public int InventoryItems;
+        public decimal wallet;
+        public int lemonade;
+        public string inventoryItems;
 
-        public PitcherOfLemonade PitcherOfLemonade
+         
+
+        public Player()
         {
-            get => default;
-            set
-            {
-            }
+            wallet = 20.0m;
+            lemonade = 0;
+
+
+            List<string> InventoryItems = new List<string>();
+            InventoryItems.Add("cups");
+            InventoryItems.Add("lemons");
+            InventoryItems.Add("sugar");
+            InventoryItems.Add("ice");
+
         }
 
         public Inventory Inventory
@@ -26,10 +34,10 @@ namespace Lemonade_Stand_UML
             get => default;
             set
             {
-                Inventory.PaperCups = 0;
-                Inventory.Lemons = 0;
-                Inventory.Sugar = 0;
-                Inventory.Ice = 0;
+                Inventory.cups = 0;
+                Inventory.lemons = 0;
+                Inventory.sugar = 0;
+                Inventory.ice = 0;
             }
         }
 
@@ -39,7 +47,7 @@ namespace Lemonade_Stand_UML
             throw new System.NotImplementedException();
         }
 
-        public void BuyPaperCups()
+        public void BuyCups()
         {
             
             throw new System.NotImplementedException();
@@ -60,37 +68,6 @@ namespace Lemonade_Stand_UML
             throw new System.NotImplementedException();
         }
 
-        public void SetLemonsQty()
-        {
-            Console.WriteLine("how many lemons per pitcher would you like to use?");
-            //Inventory.Lemons - Console.ReadLine();
-
-            throw new System.NotImplementedException();
-        }
-
-        public void SetSugarQty()
-        {
-            Console.WriteLine("How many cups of sugar per pitcher would you like to use");
-            throw new System.NotImplementedException();
-        }
-
-        public void SetIceQty()
-        {
-            Console.WriteLine("How many ice cubes per cup would you like to use?");
-            throw new System.NotImplementedException();
-        }
-
-        public void SetPrice()
-        {
-            Console.WriteLine("what is the price per cup of lemonade?");
-            throw new System.NotImplementedException();
-        }
-
-        public void MixLemonade()
-        {
-
-            throw new System.NotImplementedException();
-        }
 
         public void SellLemonade()
         {

@@ -7,8 +7,8 @@ namespace Lemonade_Stand_UML
 {
     public class Day
     {
-        public int Weather;
-        public int LengthOfDay;
+        public int weather;
+        public int lengthOfDay;
 
         public Weather Weather1
         {

@@ -43,22 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cups.cs" />
     <Compile Include="Customer.cs" />
-    <Compile Include="Customer1.cs" />
+    <Compile Include="EasyCustomer.cs" />
     <Compile Include="Day.cs" />
-    <Compile Include="example.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="Ice.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Lemonade.cs" />
-    <Compile Include="Michael.cs" />
-    <Compile Include="Mikey.cs" />
-    <Compile Include="Nate.cs" />
-    <Compile Include="Nevin.cs" />
-    <Compile Include="Paul.cs" />
+    <Compile Include="DifficultCustomer.cs" />
+    <Compile Include="Lemons.cs" />
+    <Compile Include="Recipe.cs" />
+    <Compile Include="StingyCustomer.cs" />
+    <Compile Include="ColdCustomer.cs" />
+    <Compile Include="Stock.cs" />
+    <Compile Include="Sugar.cs" />
+    <Compile Include="SweetCustomer.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shee.cs" />
+    <Compile Include="SourCustomer.cs" />
     <Compile Include="Store.cs" />
     <Compile Include="UserInterface.cs" />
     <Compile Include="Weather.cs" />

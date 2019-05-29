@@ -7,12 +7,29 @@ namespace Lemonade_Stand_UML
 {
     public class Store
     {
-        public int PriceOfIce;
-        public int PriceOfLemons;
-        public int PriceOfSugar;
-        public int PriceOfPaperCups;
+        public decimal priceOfIce;
+        public decimal priceOfLemons;
+        public decimal priceOfSugar;
+        public decimal priceOfCups;
+        public List<string> stock;
 
         //Constructors
+        public Store()
+        {
+            List<string> stock = new List<string>();
+            stock.Add("Ice");
+            stock.Add("Lemons");
+            stock.Add("Sugar");
+            stock.Add("Cups");
+
+
+            priceOfIce = .01m;
+            priceOfLemons = .75m;
+            priceOfSugar = .50m;
+            priceOfCups = .30m;
+
+
+        }
 
 
         public void SellIce()
@@ -40,7 +57,7 @@ namespace Lemonade_Stand_UML
             throw new System.NotImplementedException();
         }
 
-        public void SellPaperCups()
+        public void SellCups()
         {
             //sell 25 paper cups for $0.90
             //sell 50 paper cups for $1.70

@@ -5,16 +5,19 @@ using System.Text;
 
 namespace Lemonade_Stand_UML
 {
-    public class example
+    public class Recipe
     {
-        private int HasA;
+        private int ice;
+        private int lemons;
+        private int price;
+        private int sugar;
 
-        public example()
+        public void MixLemonade()
         {
             throw new System.NotImplementedException();
         }
 
-        public void CanDo()
+        public void CupsPerPitcher()
         {
             throw new System.NotImplementedException();
         }

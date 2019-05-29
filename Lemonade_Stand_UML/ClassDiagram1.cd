@@ -21,14 +21,6 @@
         <Position X="0.735" Y="0.091" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="Store" Type="Lemonade_Stand_UML.Store" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="5.5" Y="3.604" />
-        <Point X="5.5" Y="3.979" />
-        <Point X="8.125" Y="3.979" />
-        <Point X="8.125" Y="4.25" />
-      </Path>
-    </AssociationLine>
     <AssociationLine Name="Customer1" Type="Lemonade_Stand_UML.Customer">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.214" Y="0.3" />
@@ -45,27 +37,26 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand_UML.Inventory">
-    <Position X="9.75" Y="4.75" Width="1.5" />
+    <Position X="12.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAACAAAAAAAAAAAAAAUAA=</HashCode>
+      <HashCode>AAAACAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAA=</HashCode>
       <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Player">
     <Position X="9.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAgQgIIAAAAABAAAEANIABAIAAAAAQAAAAwAAAAA=</HashCode>
+      <HashCode>AAAAAgQgIIAAAAABAAAEAAIABQIAAAAAQAAAAwAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="PitcherOfLemonade" />
       <Property Name="Inventory" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand_UML.Store">
     <Position X="7.25" Y="4.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAACCAAAgAAEAAAAAAQQAAAAAAAAAAABAACAAA=</HashCode>
+      <HashCode>AAAAAAAACAQAAAAAAAAAAAAQgAAAAAAAAAAAAAACAAA=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -80,8 +71,8 @@
       <Property Name="Game" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Lemonade_Stand_UML.PitcherOfLemonade">
-    <Position X="12.25" Y="5" Width="1.5" />
+  <Class Name="Lemonade_Stand_UML.Lemonade">
+    <Position X="12.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAiAAAAAA=</HashCode>
       <FileName>Lemonade.cs</FileName>
@@ -127,6 +118,51 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SweetCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonade_Stand_UML.Ice">
+    <Position X="10" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonade_Stand_UML.Sugar">
+    <Position X="13.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sugar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonade_Stand_UML.Lemons">
+    <Position X="11.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lemons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonade_Stand_UML.Cups">
+    <Position X="15.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cups.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonade_Stand_UML.Stock">
+    <Position X="12.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAgQAAAAA=</HashCode>
+      <FileName>Stock.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Store" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lemonade_Stand_UML.Recipe">
+    <Position X="15.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Recipe.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

@@ -7,9 +7,23 @@ namespace Lemonade_Stand_UML
 {
     public class Inventory
     {
-        public int PaperCups;
-        public int Ice;
-        public int Lemons;
-        public int Sugar;
+
+        public int cups;
+        public int ice;
+        public int lemons;
+        public int sugar;
+
+        public Recipe Recipe
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public void StorePlayerInventory()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -7,10 +7,11 @@ namespace Lemonade_Stand_UML
 {
     public class Game
     {
-        public string Player;
-        public int LengthOfGame;
-        public int Customer;
+        public string player;
+        public int lengthOfGame;
+        public int customer;
         public List<int> numberOfDays;
+        private int store;
 
         public Player Player1
         {

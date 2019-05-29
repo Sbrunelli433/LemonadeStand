@@ -7,12 +7,12 @@ namespace Lemonade_Stand_UML
 {
     public abstract class Customer
     {
-        private int WeatherPreference;
-        private int MaxPrice;
-        private int MinPrice;
-        private int SweetnessPreference;
-        private int SournessPreference;
-        private int IcePreference;
+        private int weatherPreference;
+        private int maxPrice;
+        private int minPrice;
+        private int sweetnessPreference;
+        private int sournessPreference;
+        private int icePreference;
 
         public void BuyLemonade()
         {

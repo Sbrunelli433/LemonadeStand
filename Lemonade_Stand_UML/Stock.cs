@@ -5,14 +5,13 @@ using System.Text;
 
 namespace Lemonade_Stand_UML
 {
-    public class Lemonade
+    public class Stock
     {
-        public int sourness;
-        public int sweetness;
-        public int cupsPerPitcher;
-        private int recipe;
+        public string Name;
+        public decimal Cost;
+        public double Quantity;
 
-        public Player Player
+        public Store Store
         {
             get => default;
             set
@@ -20,6 +19,4 @@ namespace Lemonade_Stand_UML
             }
         }
     }
-
-
 }
