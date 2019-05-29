@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Lemonade_Stand_UML
 {
-    public class Recipe
+    public class Recipe : Lemonade
     {
         private int ice;
         private int lemons;
@@ -18,6 +18,21 @@ namespace Lemonade_Stand_UML
         }
 
         public void CupsPerPitcher()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void AddIce()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void AddLemons()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void AddSugar()
         {
             throw new System.NotImplementedException();
         }

@@ -8,9 +8,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Customer">
-    <Position X="4.25" Y="4.25" Width="1.75" />
+    <Position X="4.25" Y="4.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>BAAAAAAAAAAAAAAAAARAIAAAAAAAACAAAAAABBAAAAA=</HashCode>
+      <HashCode>AAAAAAQAAAAQAAAACAQAAAAAAAAAAAAAAAAgAAAAAAQ=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -27,7 +27,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAEAEAAAAAAAAAABgAAAECAAAACAgAAAAAQAAwAAAAA=</HashCode>
+      <HashCode>AAEAECABAAAAAAABgAAAAAEAAACAgAABAAQAAwAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -37,33 +37,30 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand_UML.Inventory">
-    <Position X="12.75" Y="2.75" Width="1.5" />
+    <Position X="12.75" Y="2.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAACAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Player">
     <Position X="9.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAgQgIIAAAAABAAAEAAIABQIAAAAAQAAAAwAAAAA=</HashCode>
+      <HashCode>AABAigBgoIAAAAAAAAAAIgAAASIAAAAACAAQAQAAUAg=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Inventory" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand_UML.Store">
-    <Position X="7.25" Y="4.25" Width="1.75" />
+    <Position X="7.25" Y="2.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAACAQAAAAAAAAAAAAQgAAAAAAAAAAAAAACAAA=</HashCode>
+      <HashCode>AAAAAAACAAAQAAAgAAAAAAAEAAAAAIAAAAAAAAAAAAA=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Day">
     <Position X="1.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAABAAAAIAAAAAAAgAAAAQAAACAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAEAAAAABAAAAAAAAAAABgAAAAAAAACAAAAAAA=</HashCode>
       <FileName>Day.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -74,9 +71,12 @@
   <Class Name="Lemonade_Stand_UML.Lemonade">
     <Position X="12.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAiAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABACIAAAAAQAAAAA=</HashCode>
       <FileName>Lemonade.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Player" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand_UML.EasyCustomer">
     <Position X="0.5" Y="7.75" Width="1.5" />
@@ -120,48 +120,17 @@
       <FileName>SweetCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Lemonade_Stand_UML.Ice">
-    <Position X="10" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ice.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lemonade_Stand_UML.Sugar">
-    <Position X="13.5" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Sugar.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lemonade_Stand_UML.Lemons">
-    <Position X="11.75" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Lemons.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lemonade_Stand_UML.Cups">
-    <Position X="15.25" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Cups.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lemonade_Stand_UML.Stock">
-    <Position X="12.5" Y="5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAgQAAAAA=</HashCode>
-      <FileName>Stock.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Store" />
-    </ShowAsAssociation>
-  </Class>
   <Class Name="Lemonade_Stand_UML.Recipe">
     <Position X="15.5" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="Lemonade_Stand_UML.Lemonade" FixedFromPoint="true">
+      <Path>
+        <Point X="14.25" Y="1.125" />
+        <Point X="16.25" Y="1.125" />
+        <Point X="16.25" Y="1.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <HashCode>AABBgAAAAAAAAAAAAAAAAIACAAAAABAAAAAQCIAAAAA=</HashCode>
       <FileName>Recipe.cs</FileName>
     </TypeIdentifier>
   </Class>

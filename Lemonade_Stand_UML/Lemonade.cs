@@ -10,7 +10,6 @@ namespace Lemonade_Stand_UML
         public int sourness;
         public int sweetness;
         public int cupsPerPitcher;
-        private int recipe;
 
         public Player Player
         {

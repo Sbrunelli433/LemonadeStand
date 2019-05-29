@@ -10,13 +10,5 @@ namespace Lemonade_Stand_UML
         public string Name;
         public decimal Cost;
         public double Quantity;
-
-        public Store Store
-        {
-            get => default;
-            set
-            {
-            }
-        }
     }
 }

@@ -8,22 +8,22 @@ namespace Lemonade_Stand_UML
     public class Inventory
     {
 
-        public int cups;
-        public int ice;
-        public int lemons;
-        public int sugar;
+        //public decimal cups;
+        //public decimal ice;
+        //public decimal lemons;
+        //public decimal sugar;
 
-        public Recipe Recipe
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        //Inventory Player.Inventory(decimal cups)
+        //{
+        //    return;
+        //}
+        
 
-        public void StorePlayerInventory()
-        {
-            throw new System.NotImplementedException();
-        }
+
+
+        //public void StorePlayerInventory()
+        //{
+        //    throw new System.NotImplementedException();
+        //}
     }
 }

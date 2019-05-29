@@ -55,13 +55,6 @@ namespace Lemonade_Stand_UML
             throw new System.NotImplementedException();
         }
 
-        public void SetStartingMoney()
-        {
-            //set starting money to $20.00
-
-            throw new System.NotImplementedException();
-        }
-
         public void CalcTotalIncome()
         {
             throw new System.NotImplementedException();
@@ -78,8 +71,21 @@ namespace Lemonade_Stand_UML
             throw new System.NotImplementedException();
         }
 
+        public void GoToStore()
+        {
+            Player.BuyItemsFromStore();
+
+            throw new System.NotImplementedException();
+        }
+
+        public void GoToRecipe()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public void RunGame()
         {
+
             throw new System.NotImplementedException();
         }
     }
