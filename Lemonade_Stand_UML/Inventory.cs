@@ -34,12 +34,46 @@ namespace Lemonade_Stand_UML
             get { return sugar;  }
             set { sugar = value; }
         }
+        
+  
 
-        public Player Player
+    public Player Player
         {
             get => default;
             set
             {
+            }
+        }
+        public void InventoryCheck()
+        {
+            switch (Cups)
+            {
+                case 1:
+                    Cups = 0;
+                    Console.WriteLine("you are out of cups and cannot sell any more lemonade. Please purchase some from the Store");
+                    Console.ReadLine();
+                    //Day.EndDay();
+                    break;
+                case 2:
+                    Ice = 0;
+                    Console.WriteLine("you are out of ice and cannot sell any more lemonade. Please purchase some from the Store");
+                    Console.ReadLine();
+                    //Day.EndDay();
+                    break;
+                case 3:
+                    Lemons = 0;
+                    Console.WriteLine("you are out of Lemons and cannot sell any more lemonade. Please purchase some from the Store");
+                    Console.ReadLine();
+                    //Day.EndDay();
+                    break;
+                case 4:
+                    Sugar = 0;
+                    Console.WriteLine("you are out of sugar and cannot sell any more lemonade. Please purchase some from the Store");
+                    Console.ReadLine();
+                    //Day.EndDay();
+                    break;
+                default:
+                    break;
             }
         }
     }

@@ -16,11 +16,6 @@ namespace Lemonade_Stand_UML
             player = new Player();
             store = new Store();
             day = new List<Day>();
-           
-
-
-
-          
 
         }
         public void RunGame()

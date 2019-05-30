@@ -232,6 +232,12 @@ namespace Lemonade_Stand_UML
                         break;
                 }
             }
+
+        }
+        public void EndDay()
+        {
+
+       
         }
     }
 }

@@ -18,7 +18,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand_UML.Inventory">
-    <Position X="9.5" Y="3" Width="1.75" />
+    <Position X="10.25" Y="4.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AABAiAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAQAQAAUAg=</HashCode>
       <FileName>Inventory.cs</FileName>
@@ -30,7 +30,7 @@
   <Class Name="Lemonade_Stand_UML.Store">
     <Position X="7.25" Y="2.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAACAQAAAAAQAAAAAAQAAgAAAAAAAAAAAASACA=</HashCode>
+      <HashCode>gAQAAACACAQAAAAAAAAAAAAQAAgQAACAAAAAAAACAAA=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -40,7 +40,7 @@
   <Class Name="Lemonade_Stand_UML.Day">
     <Position X="1.25" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEABCAAAAAAAAAQFAACAABgAAAAQAAACAAAAAAA=</HashCode>
+      <HashCode>AAAAAEAFCAAAAAAAAAQFAACAABgAAAAQAAACAAAAAAA=</HashCode>
       <FileName>Day.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -119,9 +119,12 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Player">
-    <Position X="9.5" Y="0.5" Width="1.5" />
+    <Position X="9.75" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAQAAAAABAIAAAAAgAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAgAAAQAAAAAAAAAAAACgAAAgAAAAAAgAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

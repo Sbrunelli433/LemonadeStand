@@ -7,15 +7,17 @@ namespace Lemonade_Stand_UML
 {
     public class Player
     {
-        public object inventory;
+        public object Inventory;
         public object recipe;
-        private decimal wallet;
+        public decimal Wallet;
+
+
 
         public Player()
         {
-            inventory = new Inventory();
+            Inventory = new Inventory();
             recipe = new Recipe();
-            wallet = 20.0m;
+            Wallet = 20.0m;
         }
 
         public Game Game
@@ -26,9 +28,11 @@ namespace Lemonade_Stand_UML
             }
         }
 
-        public void BuyItems()
+        public void CheckWallet()
         {
-            throw new System.NotImplementedException();
+            //UI.DisplayCash();
+            //displays current cash in wallet
         }
+
     }
 }
