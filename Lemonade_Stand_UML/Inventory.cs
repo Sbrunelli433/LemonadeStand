@@ -34,5 +34,13 @@ namespace Lemonade_Stand_UML
             get { return sugar;  }
             set { sugar = value; }
         }
+
+        public Player Player
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

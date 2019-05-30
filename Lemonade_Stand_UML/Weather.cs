@@ -9,15 +9,13 @@ namespace Lemonade_Stand_UML
     {
         public List<string> conditions;
         public string condition;
-        public int random;
+        public double temperature;
 
         public Weather()
         {
             Random rng = new Random();
-            int temperature = rng.Next(50, 99);
-
-
-           
+            //temperature
+            rng.Next(50, 99);
 
             conditions = new List<string>();
             conditions.Add("sunny");
@@ -26,8 +24,7 @@ namespace Lemonade_Stand_UML
             conditions.Add("overcast");
             conditions.Add("hazy");
             conditions.Add("foggy");
-
-
+            //selects condition from the above list
             rng.Next(0, conditions.Count);
         }
 
@@ -37,13 +34,10 @@ namespace Lemonade_Stand_UML
             Random rng = new Random();
             int conditionIndex = rng.Next(0, conditions.Count);
             condition = conditions[conditionIndex];
-            Console.WriteLine("the weather for this condition is " + condition);
+            double setTemperature = rng.Next(50, 99);
+            temperature = setTemperature;
+            Console.WriteLine("the weather for this condition is " + condition + " ." + "The temperature is " + temperature);
             Console.ReadLine();
-        }
-
-        public void Rain()
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

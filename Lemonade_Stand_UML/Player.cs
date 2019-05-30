@@ -17,6 +17,15 @@ namespace Lemonade_Stand_UML
             recipe = new Recipe();
             wallet = 20.0m;
         }
+
+        public Game Game
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public void BuyItems()
         {
             throw new System.NotImplementedException();

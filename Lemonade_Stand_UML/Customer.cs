@@ -15,7 +15,13 @@ namespace Lemonade_Stand_UML
         private int icePreference;
         private object customer;
 
-
+        public Day Day
+        {
+            get => default;
+            set
+            {
+            }
+        }
 
         public void BuyLemonade()
         {

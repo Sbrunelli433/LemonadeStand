@@ -14,7 +14,6 @@ namespace Lemonade_Stand_UML
 
         public Day()
         {
-
             customers = new List<Customer>()
             {
                 new EasyCustomer(),
@@ -43,12 +42,80 @@ namespace Lemonade_Stand_UML
             }
         }
 
+        public Game Game1
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public void GenerateCustomersForSunny()
+        {
+            Random rng = new Random();
+            int customer = rng.Next(1, 6);
+
+            for (int i = 0; i < 150; i++)
+            {
+                switch (customer)
+                {
+                    case 1:
+                        customers.Add(new EasyCustomer());
+                        break;
+                    case 2:
+                        new StingyCustomer();
+                        break;
+                    case 3:
+                        new SourCustomer();
+                        break;
+                    case 4:
+                        new SweetCustomer();
+                        break;
+                    case 5:
+                        new ColdCustomer();
+                        break;
+                    case 6:
+                        new DifficultCustomer();
+                        break;
+                }
+            }
+        }
+        public void GenerateCustomersForCloudy()
+        {
+            Random rng = new Random();
+            int customer = rng.Next(1, 6);
+
+            for (int i = 0; i < 100; i++)
+            {
+                switch (customer)
+                {
+                    case 1:
+                        customers.Add(new EasyCustomer());
+                        break;
+                    case 2:
+                        new StingyCustomer();
+                        break;
+                    case 3:
+                        new SourCustomer();
+                        break;
+                    case 4:
+                        new SweetCustomer();
+                        break;
+                    case 5:
+                        new ColdCustomer();
+                        break;
+                    case 6:
+                        new DifficultCustomer();
+                        break;
+                }
+            }
+        }
         public void GenerateCustomersForRain()
         {
             Random rng = new Random();
             int customer = rng.Next(1, 6);      
 
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 30; i++)
             { 
                 switch (customer)
                 {
@@ -71,11 +138,100 @@ namespace Lemonade_Stand_UML
                         new DifficultCustomer();
                         break;
                 }
-
-
             }
+        }
 
-            throw new System.NotImplementedException();
+        public void GenerateCustomersForOvercast()
+        {
+            Random rng = new Random();
+            int customer = rng.Next(1, 6);
+
+            for (int i = 0; i < 90; i++)
+            {
+                switch (customer)
+                {
+                    case 1:
+                        customers.Add(new EasyCustomer());
+                        break;
+                    case 2:
+                        new StingyCustomer();
+                        break;
+                    case 3:
+                        new SourCustomer();
+                        break;
+                    case 4:
+                        new SweetCustomer();
+                        break;
+                    case 5:
+                        new ColdCustomer();
+                        break;
+                    case 6:
+                        new DifficultCustomer();
+                        break;
+                }
+            }
+        }
+
+        public void GenerateCustomersForHazy()
+        {
+            Random rng = new Random();
+            int customer = rng.Next(1, 6);
+
+            for (int i = 0; i < 125; i++)
+            {
+                switch (customer)
+                {
+                    case 1:
+                        customers.Add(new EasyCustomer());
+                        break;
+                    case 2:
+                        new StingyCustomer();
+                        break;
+                    case 3:
+                        new SourCustomer();
+                        break;
+                    case 4:
+                        new SweetCustomer();
+                        break;
+                    case 5:
+                        new ColdCustomer();
+                        break;
+                    case 6:
+                        new DifficultCustomer();
+                        break;
+                }
+            }
+        }
+
+        public void GenerateCustomersForFoggy()
+        {
+            Random rng = new Random();
+            int customer = rng.Next(1, 6);
+
+            for (int i = 0; i < 25; i++)
+            {
+                switch (customer)
+                {
+                    case 1:
+                        customers.Add(new EasyCustomer());
+                        break;
+                    case 2:
+                        new StingyCustomer();
+                        break;
+                    case 3:
+                        new SourCustomer();
+                        break;
+                    case 4:
+                        new SweetCustomer();
+                        break;
+                    case 5:
+                        new ColdCustomer();
+                        break;
+                    case 6:
+                        new DifficultCustomer();
+                        break;
+                }
+            }
         }
     }
 }
