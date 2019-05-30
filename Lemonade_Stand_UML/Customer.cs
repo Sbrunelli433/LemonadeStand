@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Lemonade_Stand_UML
 {
-    public abstract class Customer
+    public class Customer
     {
         private int weatherPreference;
         private int maxPrice;
@@ -13,6 +13,9 @@ namespace Lemonade_Stand_UML
         private int sweetnessPreference;
         private int sournessPreference;
         private int icePreference;
+        private object customer;
+
+
 
         public void BuyLemonade()
         {

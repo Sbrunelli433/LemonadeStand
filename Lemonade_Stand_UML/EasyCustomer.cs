@@ -7,5 +7,6 @@ namespace Lemonade_Stand_UML
 {
     public class EasyCustomer : Customer
     {
+
     }
 }
