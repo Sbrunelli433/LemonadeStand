@@ -7,23 +7,32 @@ namespace Lemonade_Stand_UML
 {
     public class Inventory
     {
+        private int cups;
+        public int Cups
+        {
+            get { return cups; }
+            set { cups = value; }
+        }
 
-        //public decimal cups;
-        //public decimal ice;
-        //public decimal lemons;
-        //public decimal sugar;
+        private int ice;
+        public int Ice
+        {
+            get { return ice; }
+            set { ice = value; }
+        }
 
-        //Inventory Player.Inventory(decimal cups)
-        //{
-        //    return;
-        //}
-        
+        private int lemons;
+        public int Lemons
+        {
+            get { return lemons; }
+            set { lemons = value; }
+        }
 
-
-
-        //public void StorePlayerInventory()
-        //{
-        //    throw new System.NotImplementedException();
-        //}
+        private int sugar;
+        public int Sugar
+        {
+            get { return sugar;  }
+            set { sugar = value; }
+        }
     }
 }

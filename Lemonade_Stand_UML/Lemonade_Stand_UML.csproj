@@ -43,23 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cups.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="EasyCustomer.cs" />
     <Compile Include="Day.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="Ice.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Lemonade.cs" />
     <Compile Include="DifficultCustomer.cs" />
-    <Compile Include="Lemons.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Recipe.cs" />
     <Compile Include="StingyCustomer.cs" />
     <Compile Include="ColdCustomer.cs" />
     <Compile Include="Stock.cs" />
-    <Compile Include="Sugar.cs" />
     <Compile Include="SweetCustomer.cs" />
-    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SourCustomer.cs" />

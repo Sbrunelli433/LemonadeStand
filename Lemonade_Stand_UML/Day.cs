@@ -9,8 +9,12 @@ namespace Lemonade_Stand_UML
     {
         public int weather;
         public int lengthOfDay;
+        public List<string> customers;
+        //public Random number generator
 
-        public Weather Weather1
+
+
+        public Weather Weather
         {
             get => default;
             set

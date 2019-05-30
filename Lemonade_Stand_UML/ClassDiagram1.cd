@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Lemonade_Stand_UML.Weather">
-    <Position X="1.25" Y="4.25" Width="1.5" />
+    <Position X="1.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAQAAAAAQAA=</HashCode>
       <FileName>Weather.cs</FileName>
@@ -14,58 +14,28 @@
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Lemonade_Stand_UML.Game">
-    <Position X="4.25" Y="0.5" Width="1.75" />
-    <AssociationLine Name="Player1" Type="Lemonade_Stand_UML.Player">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.735" Y="0.091" />
-      </MemberNameLabel>
-    </AssociationLine>
-    <AssociationLine Name="Customer1" Type="Lemonade_Stand_UML.Customer">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.214" Y="0.3" />
-      </MemberNameLabel>
-    </AssociationLine>
-    <TypeIdentifier>
-      <HashCode>AAEAECABAAAAAAABgAAAAAEAAACAgAABAAQAAwAAAAA=</HashCode>
-      <FileName>Game.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Player1" />
-      <Property Name="Store" />
-      <Property Name="Customer1" />
-    </ShowAsAssociation>
-  </Class>
   <Class Name="Lemonade_Stand_UML.Inventory">
-    <Position X="12.75" Y="2.75" Width="1.75" />
+    <Position X="9.5" Y="3" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AABAiAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAUAg=</HashCode>
       <FileName>Inventory.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lemonade_Stand_UML.Player">
-    <Position X="9.75" Y="0.5" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AABAigBgoIAAAAAAAAAAIgAAASIAAAAACAAQAQAAUAg=</HashCode>
-      <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Store">
     <Position X="7.25" Y="2.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAACAAAQAAAgAAAAAAAEAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Day">
     <Position X="1.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAEAAAAABAAAAAAAAAAABgAAAAAAAACAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAFAAAAABAAAAAAAAAAABgAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>Day.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Weather1" />
-      <Property Name="Game" />
+      <Property Name="Weather" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand_UML.Lemonade">
@@ -74,9 +44,6 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABACIAAAAAQAAAAA=</HashCode>
       <FileName>Lemonade.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Player" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand_UML.EasyCustomer">
     <Position X="0.5" Y="7.75" Width="1.5" />
@@ -132,6 +99,20 @@
     <TypeIdentifier>
       <HashCode>AABBgAAAAAAAAAAAAAAAAIACAAAAABAAAAAQCIAAAAA=</HashCode>
       <FileName>Recipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonade_Stand_UML.Game">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonade_Stand_UML.Player">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAABAIAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

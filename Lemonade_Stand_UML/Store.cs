@@ -7,30 +7,21 @@ namespace Lemonade_Stand_UML
 {
     public class Store
     {
-        public decimal priceOfCups;
-        public decimal priceOfIce;
-        public decimal priceOfLemons;
-        public decimal priceOfSugar;
+        public decimal priceOfTwenty;
+        public decimal priceOfFourty;
+        public decimal priceOfSixty;
         
-        public List<string> stock;
+
 
         //Constructors
         public Store()
         {
-            List<string> stock = new List<string>();
-            stock.Add("Ice");
-            stock.Add("Lemons");
-            stock.Add("Sugar");
-            stock.Add("Cups");
-
-
-            priceOfIce = .01m;
-            priceOfLemons = .75m;
-            priceOfSugar = .50m;
-            priceOfCups = .30m;
-
+            priceOfTwenty = .20m;
+            priceOfFourty = .15m;
+            priceOfSixty = .12m;
 
         }
+
 
         //public object SellCups(decimal priceOfCups)
         //{
