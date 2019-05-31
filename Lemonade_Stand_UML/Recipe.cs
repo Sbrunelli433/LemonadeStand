@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 
@@ -7,35 +8,74 @@ namespace Lemonade_Stand_UML
 {
     public class Recipe : Lemonade
     {
-        private int ice;
-        private int lemons;
-        private int price;
-        private int sugar;
+        //public int ice;
+        //public int lemons;
+        //public int price;
+        //public int sugar;
+        public int quantity;
+        public string input;
+        public decimal price;
 
-        public void MixLemonade()
+        public void  SetPricePerCup()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("what is your price per cup for this day?");
+            string input = Console.ReadLine();
+                {
+                decimal price = decimal.Parse(input, CultureInfo.InvariantCulture);
+                }
         }
 
-
-        public void AddIce()
+        public int AddIce(Player player, Inventory inventory)
         {
-
-            throw new System.NotImplementedException();
+            Console.WriteLine("how much ice per cup would you like to use?");
+            quantity = Int32.Parse(Console.ReadLine());
+            switch (quantity)
+            {
+                default:
+                    inventory.Ice = 0;
+                    Console.WriteLine("you do not have enough Ice! Purchase more from the store");
+                    Console.ReadLine();
+                    break;
+            }
+            return quantity;
         }
 
-        public void AddLemons()
+        public int AddLemons(Player player, Inventory inventory)
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("how many lemons per pitcher would you like to use?");
+            quantity = Int32.Parse(Console.ReadLine());
+            switch (quantity)
+            {
+                default:
+                    inventory.Lemons = 0;
+                    Console.WriteLine("you do not have enough Lemons! Purchase more from the store");
+                    Console.ReadLine();
+                    break;
+            }
+            return quantity;
         }
 
-        public void AddSugar()
+        public int AddSugar(Player player, Inventory inventory)
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("how much sugar per pitcher would you like to use?");
+            quantity = Int32.Parse(Console.ReadLine());
+            switch (quantity)
+            {
+                default:
+                    inventory.Sugar = 0;
+                    Console.WriteLine("you do not have enough Sugar! Purchase more from the store");
+                    Console.ReadLine();
+                    break;
+            }
+            return quantity;
         }
-        public void CupsPerPitcher()
+
+        public void MixLemonade(Player player, Inventory inventory)
         {
-            throw new System.NotImplementedException();
+            inventory.Ice -= AddIce(player, inventory);
+            inventory.Lemons -= AddLemons(player, inventory);
+            inventory.Sugar -= AddSugar(player,inventory);
+
         }
     }
 }

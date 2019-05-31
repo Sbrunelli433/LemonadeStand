@@ -7,9 +7,11 @@ namespace Lemonade_Stand_UML
 {
     public class Lemonade
     {
+        public decimal price;
         public int sourness;
         public int sweetness;
-        public int cupsPerPitcher;
+        public int pitcherOfLemonade;
+
 
         public Player Player
         {
@@ -18,6 +20,7 @@ namespace Lemonade_Stand_UML
             {
             }
         }
+
     }
 
 

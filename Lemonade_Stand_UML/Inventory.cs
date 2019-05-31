@@ -44,6 +44,11 @@ namespace Lemonade_Stand_UML
             {
             }
         }
+        public void DisplayCupsInv()
+        {
+            Console.WriteLine("you currently have " + cups + "in stock");
+            Console.ReadLine();
+        }
         public void InventoryCheck()
         {
             switch (Cups)

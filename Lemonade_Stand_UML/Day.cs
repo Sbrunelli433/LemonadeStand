@@ -42,13 +42,6 @@ namespace Lemonade_Stand_UML
             }
         }
 
-        public Game Game1
-        {
-            get => default;
-            set
-            {
-            }
-        }
 
         public void GenerateCustomersForSunny()
         {
@@ -236,7 +229,10 @@ namespace Lemonade_Stand_UML
         }
         public void EndDay()
         {
-
+            //display cups sold
+            //display end of day money
+            //
+            
        
         }
     }

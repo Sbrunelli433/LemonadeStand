@@ -20,7 +20,7 @@
   <Class Name="Lemonade_Stand_UML.Inventory">
     <Position X="10.25" Y="4.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AABAiAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAQAQAAUAg=</HashCode>
+      <HashCode>AABAiAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAQAQAQUAg=</HashCode>
       <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -30,7 +30,7 @@
   <Class Name="Lemonade_Stand_UML.Store">
     <Position X="7.25" Y="2.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>gAQAAACACAQAAAAAAAAAAAAQAAgQAACAAAAAAAACAAA=</HashCode>
+      <HashCode>gAQAAACACAQAAAAAAAAAAAAQAAgQABCAAAAIAAACAAI=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -40,18 +40,17 @@
   <Class Name="Lemonade_Stand_UML.Day">
     <Position X="1.25" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAFCAAAAAAAAAQFAACAABgAAAAQAAACAAAAAAA=</HashCode>
+      <HashCode>AAAAAEAFCAAAAAAAAAQEAACAABgAAAAQAAACAAAAAAA=</HashCode>
       <FileName>Day.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Weather" />
-      <Property Name="Game1" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand_UML.Lemonade">
     <Position X="12.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABACIAAAAAQAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAABACAAAAAEQAAAAA=</HashCode>
       <FileName>Lemonade.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -101,21 +100,21 @@
     <Position X="15.5" Y="1.75" Width="1.5" />
     <InheritanceLine Type="Lemonade_Stand_UML.Lemonade" FixedFromPoint="true">
       <Path>
-        <Point X="14.25" Y="1.125" />
-        <Point X="14.625" Y="1.125" />
-        <Point X="14.625" Y="3.265" />
-        <Point X="15.5" Y="3.265" />
+        <Point X="14.25" Y="1.187" />
+        <Point X="14.625" Y="1.187" />
+        <Point X="14.625" Y="3.169" />
+        <Point X="15.5" Y="3.169" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AABBgAAAAAAAAAAAAAAAAIACAAAAABAAAAAQCIAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIQCAAAQABCAAAAAAIAAAAA=</HashCode>
       <FileName>Recipe.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Game">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAIAAAAAAAAAAAAAAAAAAEAAQBAAQAAAAAAAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAAIAAAAAAAAAAAAAEAAQBAAQAAAAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -125,7 +124,7 @@
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAgAAAQAAAAAAAAAAAACgEAAAAAAAAAgAAAAA=</HashCode>
+      <HashCode>AAAAAAAAgAAAQAAAAAAAIAAAAAgMAAACAAAAAAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
