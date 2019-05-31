@@ -17,13 +17,10 @@ namespace Lemonade_Stand_UML
             throw new System.NotImplementedException();
         }
 
-        public void CupsPerPitcher()
-        {
-            throw new System.NotImplementedException();
-        }
 
         public void AddIce()
         {
+
             throw new System.NotImplementedException();
         }
 
@@ -33,6 +30,10 @@ namespace Lemonade_Stand_UML
         }
 
         public void AddSugar()
+        {
+            throw new System.NotImplementedException();
+        }
+        public void CupsPerPitcher()
         {
             throw new System.NotImplementedException();
         }

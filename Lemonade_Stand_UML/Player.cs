@@ -10,6 +10,8 @@ namespace Lemonade_Stand_UML
         public object Inventory;
         public object recipe;
         public decimal Wallet;
+        public static string name;
+        
 
 
 
@@ -33,6 +35,8 @@ namespace Lemonade_Stand_UML
             //UI.DisplayCash();
             //displays current cash in wallet
         }
+
+
 
     }
 }

@@ -17,15 +17,6 @@ namespace Lemonade_Stand_UML
 
 
 
-        //Constructors
-        public Store()
-        {
-            priceOfTwentyFive = .75m;
-            priceOfFifty = 1.25m;
-            priceOfOneHundred = 2.25m;
-  
-        }
-
         public Game Game
         {
             get => default;

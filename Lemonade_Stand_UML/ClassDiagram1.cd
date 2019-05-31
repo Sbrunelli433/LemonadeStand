@@ -102,8 +102,9 @@
     <InheritanceLine Type="Lemonade_Stand_UML.Lemonade" FixedFromPoint="true">
       <Path>
         <Point X="14.25" Y="1.125" />
-        <Point X="16.25" Y="1.125" />
-        <Point X="16.25" Y="1.75" />
+        <Point X="14.625" Y="1.125" />
+        <Point X="14.625" Y="3.265" />
+        <Point X="15.5" Y="3.265" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -114,7 +115,7 @@
   <Class Name="Lemonade_Stand_UML.Game">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQAAAAAAAA=</HashCode>
+      <HashCode>AAAgAAAAIAAAAAAAAAAAAAAAAAAEAAQBAAQAAAAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -124,7 +125,7 @@
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAgAAAQAAAAAAAAAAAACgAAAgAAAAAAgAAAAA=</HashCode>
+      <HashCode>AAAAAAAAgAAAQAAAAAAAAAAAACgEAAAAAAAAAgAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
