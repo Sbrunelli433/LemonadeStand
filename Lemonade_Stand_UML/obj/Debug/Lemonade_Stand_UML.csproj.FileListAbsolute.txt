@@ -1,0 +1,7 @@
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML\bin\Debug\Lemonade_Stand_UML.exe.config
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML\bin\Debug\Lemonade_Stand_UML.exe
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML\bin\Debug\Lemonade_Stand_UML.pdb
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML\obj\Debug\Lemonade_Stand_UML.csprojAssemblyReference.cache
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML\obj\Debug\Lemonade_Stand_UML.csproj.CoreCompileInputs.cache
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML\obj\Debug\Lemonade_Stand_UML.exe
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML\obj\Debug\Lemonade_Stand_UML.pdb
