@@ -11,7 +11,40 @@ namespace Lemonade_Stand_UML
         private object store;
         public static List<double> day;
         public static string name;
-       
+        public Player Player
+        {
+            get { return Player;}
+            set { Player = value; }
+        }
+
+        public Lemonade Lemonade
+        {
+            get { return Lemonade; }
+            set { Lemonade = value; }
+        }
+
+        public Inventory Inventory
+        {
+            get { return Inventory; }
+            set { Inventory = value; }
+        }
+        public Store Store
+        {
+            get { return Store; }
+            set { Store = value; }
+        }
+        public Recipe Recipe
+        {
+            get { return Recipe; }
+            set { Recipe = value; }
+        }
+        public Weather Weather
+        {
+            get { return Weather; }
+            set { Weather = value; }
+        }
+
+
         public Game()
         {
             player = new Player();
@@ -32,10 +65,12 @@ namespace Lemonade_Stand_UML
 
             InputName();
             DisplayRules();
-            //Player.Menu();
-            //Store.DisplayStoreMenu();
-
-
+            Player.MainMenu();
+            //gameplay FOR LOOP of days
+            //counter ++ for each day
+            Weather.SetCondition();
+            Weather.DisplayWeatherConditions();
+            Store.DisplayStoreMenu();
 
         }
 
@@ -46,11 +81,11 @@ namespace Lemonade_Stand_UML
         }
         public void DisplayRules()
         {
-            Console.WriteLine("Greetings " + name + "! you are about to start your own lemonade stand with in your Wallet. To begin, you need to buy ingredients from the Store and create your lemonade recipe.");
-            Console.WriteLine("If you do not run out of money, this game will lasy 7 days. Press any key to go to the store.");
+            Console.WriteLine("Greetings " + name + "! you are about to start your own lemonade stand with $20.00 in your Wallet. To begin, you need to buy ingredients from the Store and create your lemonade recipe.");
+            Console.WriteLine("If you do not run out of money, this game will lasy 7 days. Press any key to go to the menu.");
             Console.ReadLine();
-            //Store.EnterStore();
         }
+
 
     }
  

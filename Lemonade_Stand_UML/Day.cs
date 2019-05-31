@@ -25,15 +25,6 @@ namespace Lemonade_Stand_UML
             };
         }
 
-
-        public Weather Weather
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         public Game Game
         {
             get => default;
@@ -42,6 +33,13 @@ namespace Lemonade_Stand_UML
             }
         }
 
+        public Weather Weather
+        {
+            get => default;
+            set
+            {
+            }
+        }
 
         public void GenerateCustomersForSunny()
         {

@@ -36,14 +36,6 @@ namespace Lemonade_Stand_UML
         }
         
   
-
-    public Player Player
-        {
-            get => default;
-            set
-            {
-            }
-        }
         public void DisplayCupsInv()
         {
             Console.WriteLine("you currently have " + cups + "in stock");

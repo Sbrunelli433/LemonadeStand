@@ -28,7 +28,10 @@ namespace Lemonade_Stand_UML
             rng.Next(0, conditions.Count);
         }
 
+        public void DisplayWeatherConditions()
+        {
 
+        }
         public void SetCondition()
         {
             Random rng = new Random();

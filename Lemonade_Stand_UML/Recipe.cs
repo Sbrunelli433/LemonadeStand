@@ -6,23 +6,26 @@ using System.Text;
 
 namespace Lemonade_Stand_UML
 {
-    public class Recipe : Lemonade
+    public class Recipe
     {
-        //public int ice;
-        //public int lemons;
-        //public int price;
-        //public int sugar;
+
         public int quantity;
         public string input;
         public decimal price;
 
-        public void  SetPricePerCup()
+        public void DisplayRecipeMenu()
+        {
+            Console.WriteLine("welcome to the Recipe Menu! What would you like to do? Set Price for each cup? Add Ice? Add Lemons? Add Sugar?");
+            string input = Console.ReadLine();
+        }
+
+        public void SetPricePerCup()
         {
             Console.WriteLine("what is your price per cup for this day?");
             string input = Console.ReadLine();
-                {
+            {
                 decimal price = decimal.Parse(input, CultureInfo.InvariantCulture);
-                }
+            }
         }
 
         public int AddIce(Player player, Inventory inventory)
@@ -31,6 +34,10 @@ namespace Lemonade_Stand_UML
             quantity = Int32.Parse(Console.ReadLine());
             switch (quantity)
             {
+                case 1:
+                    //MixLemonade();
+                    break;
+
                 default:
                     inventory.Ice = 0;
                     Console.WriteLine("you do not have enough Ice! Purchase more from the store");
@@ -74,8 +81,11 @@ namespace Lemonade_Stand_UML
         {
             inventory.Ice -= AddIce(player, inventory);
             inventory.Lemons -= AddLemons(player, inventory);
-            inventory.Sugar -= AddSugar(player,inventory);
+            inventory.Sugar -= AddSugar(player, inventory);
 
         }
     }
 }
+//15 cups per pitcher
+//every qty of lemons and sugar used goes into 1 pitcher
+//ice per cup
