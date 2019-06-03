@@ -11,14 +11,17 @@ namespace Lemonade_Stand_UML
         public Recipe recipe;
         public decimal wallet;
         public string name;
-        private int pitcherOfLemonade;
+        //private bool pitcherOfLemonade;
 
-        public int PitcherOfLemonade
-        {
-            get { return pitcherOfLemonade; }
-            set { pitcherOfLemonade = value; }
-        }
+        //public bool PitcherOfLemonade
+        //{
+        //    get { return pitcherOfLemonade; }
+        //    set { pitcherOfLemonade = value; }
+        //}
         public string input;
+
+        public bool hasPitcherOfLemonade = true;
+
   
 
         public Player()
@@ -29,18 +32,13 @@ namespace Lemonade_Stand_UML
             wallet = 20.0m;
 
         }
-
-        //public Game Game { get; set; }
         //public Lemonade Lemonade { get; set; }
 
         //public Inventory Inventory { get; set; }
 
-        //public Store Store{ get; set; }
-
-
         //public Recipe Recipe { get; set; }
 
-        //public Weather Weather { get; set; }
+ 
 
 
 

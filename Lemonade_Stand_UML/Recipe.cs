@@ -12,14 +12,17 @@ namespace Lemonade_Stand_UML
         public int quantity;
         public string input;
         public decimal price;
-        public static int cupsPerPitcher = 15;
+        public int cupsPerPitcher = 15;
+        public int icePerPitcher;
+        public int lemonsPerPitcher;
+        public int sugarPerPitcher;
 
         public void DisplayRecipeMenu()
         {
             bool isOut = true;
             while (isOut)
             {
-                Console.WriteLine("welcome to the Recipe Menu! What would you like to do? Set Price for each cup? Add Ice? Add Lemons? Add Sugar? exit to exit.");
+                Console.WriteLine("welcome to the Recipe Menu! What would you like to do? Set Price for each cup? Add Ice? Add Lemons? Add Sugar? View recipe? exit to exit.");
                 string input = Console.ReadLine().ToLower();
                 switch (input)
                 {
@@ -27,15 +30,18 @@ namespace Lemonade_Stand_UML
                         SetPricePerCup();
                         DisplayPrice();
                         break;
-                    //case "ice":
-                    //    int AddIce(Player player, Inventory inventory);
-                    //    break;
-                    //case "lemons":
-                    //    int AddLemons(Player player, Inventory inventory)
-                    //    break;
-                    //case "sugar":
-                    //    int AddSugar(player, inventory);
-                    //    break;
+                    case "ice":
+                        AddIce();
+                        break;
+                    case "lemons":
+                        AddLemons();
+                        break;
+                    case "sugar":
+                        AddSugar();
+                        break;
+                    case "recipe":
+                        DisplayRecipe();
+                        break;
                     case "exit":
                         isOut = false;
                         break;
@@ -53,70 +59,55 @@ namespace Lemonade_Stand_UML
                 }
             }
 
-
-            public int AddIce(Player player, Inventory inventory)
+            public void AddIce()
             {
                 Console.WriteLine("how much ice per cup would you like to use?");
-                quantity = Int32.Parse(Console.ReadLine());
-                switch (quantity)
-                {
-                    case 1:
-                        quantity - inventory.Ice;
-                        //MixLemonade();
-                        break;
-
-                    default:
-                        inventory.Ice = 0;
-                        Console.WriteLine("you do not have enough Ice! Purchase more from the store");
-                        Console.ReadLine();
-                        break;
-                }
-                return quantity;
+                icePerPitcher = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("you are using " + icePerPitcher + " ice cubes in each of your pitchers");
+                Console.ReadLine();
             }
 
-            public int AddLemons(Player player, Inventory inventory)
+            public void AddLemons()
             {
                 Console.WriteLine("how many lemons per pitcher would you like to use?");
-                quantity = Int32.Parse(Console.ReadLine());
-                switch (quantity)
-                {
-                    default:
-                        inventory.Lemons = 0;
-                        Console.WriteLine("you do not have enough Lemons! Purchase more from the store");
-                        Console.ReadLine();
-                        break;
-                }
-                return quantity;
-            }
-
-            public int AddSugar(Player player, Inventory inventory)
+                lemonsPerPitcher = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("you are using " + lemonsPerPitcher   + " lemons in each of your pitchers");
+                Console.ReadLine();
+        }
+            public void AddSugar()
             {
-                Console.WriteLine("how much sugar per pitcher would you like to use?");
-                quantity = Int32.Parse(Console.ReadLine());
-                switch (quantity)
-                {
-                    default:
-                        inventory.Sugar = 0;
-                        Console.WriteLine("you do not have enough Sugar! Purchase more from the store");
-                        Console.ReadLine();
-                        break;
-                }
-                return quantity;
-            }
+            Console.WriteLine("how many cups of sugar per pitcher would you like to use?");
+            sugarPerPitcher = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("you are using " + sugarPerPitcher + " cups of sugar in each of your pitchers");
+            Console.ReadLine();
+        }
+        public void DisplayRecipe()
+        {
+            Console.WriteLine("you currently have " + icePerPitcher + " ice cubes in each pitcher");
+            Console.WriteLine("you currently have " + lemonsPerPitcher  + " lemons in each pitcher");
+            Console.WriteLine("you currently have " + sugarPerPitcher  + " cups of sugar in each pitcher");
+            Console.ReadLine();
+        }
 
-            public void MixLemonade(Player player, Inventory inventory)
+        public void MixLemonade(Inventory inventory)
+        {
+            inventory.Ice -= icePerPitcher;
+            inventory.Lemons -= lemonsPerPitcher;
+            inventory.Sugar -= sugarPerPitcher;
+            cupsPerPitcher = 15;
+        }
+        public void InventoryCheck(Inventory inventory)
+        {
+            if (inventory.Ice <= icePerPitcher && inventory.Lemons < lemonsPerPitcher && inventory.Sugar < sugarPerPitcher && inventory.Cups < cupsPerPitcher)
             {
-                inventory.Ice -= AddIce(player, inventory);
-                inventory.Lemons -= AddLemons(player, inventory);
-                inventory.Sugar -= AddSugar(player, inventory);
-
+                Console.WriteLine("you cannot make any more pitchers of lemonade!");
             }
+
+        }
             public void DisplayPrice()
             {
                 Console.WriteLine("the price per cup for today is set at " + price);
             }
-    }
+        }
     }
 
-//every qty of lemons and sugar used goes into 1 pitcher
-//ice per cup

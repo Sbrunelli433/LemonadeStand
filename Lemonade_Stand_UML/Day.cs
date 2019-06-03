@@ -41,7 +41,17 @@ namespace Lemonade_Stand_UML
             {
             }
         }
-
+        
+        public void Sales(Player player)
+        {
+            foreach (var customer in customers)
+            {
+                customer.BuyLemonade();
+                player.recipe.cupsPerPitcher--;
+                player.wallet += player.recipe.price;
+            }
+        }
+       
         public void GenerateCustomersForSunny()
         {
             Random rng = new Random();

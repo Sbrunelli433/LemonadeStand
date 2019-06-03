@@ -29,10 +29,6 @@ namespace Lemonade_Stand_UML
         {
             Console.WriteLine("welcome to the store! What would you like to do? Buy Cups? Buy Ice? Buy Lemons? Buy Sugar? Exit to exit.");
             string input = Console.ReadLine().ToLower();
-
-            //while loop here
-            //bool true
-            //reference MOST WANTED MENU LOOP
             switch (input)
             {
                 case "cups":

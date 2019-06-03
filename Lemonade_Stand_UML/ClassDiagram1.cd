@@ -3,14 +3,14 @@
   <Class Name="Lemonade_Stand_UML.Weather">
     <Position X="1.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAEAAABAAAAAAAAAAAAAAAIAQAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAAAAAEAAAAAAAAAAAAAAAAAAAIAQAAAAAAAA=</HashCode>
       <FileName>Weather.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Customer">
     <Position X="4.25" Y="4.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>BAAAAAQAIAAQAAAACARAIAAAAAAAACAAAAAgBBAAAAQ=</HashCode>
+      <HashCode>BAAAAAQAIAAQAAAACARAIAAAAAAAACAAACAgBBAAAAQ=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -20,7 +20,7 @@
   <Class Name="Lemonade_Stand_UML.Inventory">
     <Position X="10.25" Y="4.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AABAiAAAAIAEAAAAAAAAAAAAAAgAAAAAAAAQAAAAUAg=</HashCode>
+      <HashCode>AABBiAAAAYAEAAAAAAAAAAAAAAgAAAAAAAAQAAAAUAg=</HashCode>
       <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -37,7 +37,7 @@
   <Class Name="Lemonade_Stand_UML.Day">
     <Position X="1.25" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAFCAAAAAAAAAQEAACAABgAAAAQAAACAAAAAAA=</HashCode>
+      <HashCode>AAAAAEAFCAAAAAAEAAQEAACAABgAAAAQAAACAAAAAAA=</HashCode>
       <FileName>Day.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -96,14 +96,14 @@
   <Class Name="Lemonade_Stand_UML.Recipe">
     <Position X="17.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAACAIQCAAAAABCIAAAAAIAAAAA=</HashCode>
+      <HashCode>AQBBAAAAAAAAAgAAAAACAIQCAAAAABCKAAAAAIAAAAE=</HashCode>
       <FileName>Recipe.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Game">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAIAAAAIAAEAAAAAAQAAAEAAQLAAQAA0AAAAA=</HashCode>
+      <HashCode>AAAgAAAAIAAAAIAAEAAAAAAQAAAEAAQBAAQAAUAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -113,7 +113,7 @@
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAgAAAQAAAAAAAIBAAAAAEABACAAAAEgAAAAA=</HashCode>
+      <HashCode>AAAAAAAAgAAAQAAAAAAAIAAAAAAEAJACAAAAggAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>

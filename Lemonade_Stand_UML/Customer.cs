@@ -38,7 +38,7 @@ namespace Lemonade_Stand_UML
         public int SournessPreference
         {
             get { return sournessPreference; }
-            set { sweetnessPreference = value; }
+            set { sournessPreference = value; }
         }
         private int icePreference;
         public int IcePreference
@@ -48,12 +48,9 @@ namespace Lemonade_Stand_UML
         }
         public Customer()
         {
-
-        }
-        public Customer(string weatherPreference, decimal MaxPrice, decimal MinPrice, int SweetnessPreference, int SournessPreference, int IcePreference)
-        {
-
-
+            bool willBuy = true;
+            if (willBuy == true)
+            { }
         }
 
 
@@ -64,9 +61,12 @@ namespace Lemonade_Stand_UML
             {
             }
         }
+        public bool willBuy;
 
         public virtual void BuyLemonade()
         {
+            willBuy = true;
+
 
         }
     }

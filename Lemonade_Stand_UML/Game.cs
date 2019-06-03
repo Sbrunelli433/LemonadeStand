@@ -55,8 +55,8 @@ namespace Lemonade_Stand_UML
             //gameplay FOR LOOP of days
             //counter ++ for each day
             day.weather.SetCondition();
-            day.weather.DisplayWeatherConditions();
-            store.DisplayStoreMenu(player, player.inventory);
+            //store.DisplayStoreMenu(player, player.inventory);
+            StartDay();
 
         }
 
@@ -91,13 +91,13 @@ namespace Lemonade_Stand_UML
                         player.recipe.DisplayRecipeMenu();
                         break;
                     case "weather":
-                        day.weather.DisplayWeatherConditions();
+                        day.weather.SetCondition();
                         break;
                     case "wallet":
                         player.DisplayWallet();
                         break;
                     case "start day":
-                        player.ClickToStartDay();
+                        StartDay();
                         break;
                     case "Exit":
                         isOver = false;
@@ -108,12 +108,10 @@ namespace Lemonade_Stand_UML
             }
 
         }
-        public void ReturnToMainMenu()
+
+        public void StartDay()
         {
-            MainMenu();
+
         }
-
-
-    }
-
+     }
 }

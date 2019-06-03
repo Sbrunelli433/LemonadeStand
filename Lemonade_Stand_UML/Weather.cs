@@ -28,10 +28,6 @@ namespace Lemonade_Stand_UML
             rng.Next(0, conditions.Count);
         }
 
-        public void DisplayWeatherConditions()
-        {
-
-        }
         public void SetCondition()
         {
             Random rng = new Random();
@@ -41,10 +37,6 @@ namespace Lemonade_Stand_UML
             temperature = setTemperature;
             Console.WriteLine("the weather for this condition is " + condition + " ." + "The temperature is " + temperature + " press any key to return to menu");
             Console.ReadLine();
-            //    {
-            //    Game.ReturnToMainMenu();
-
-            //}
         }
     }
 }

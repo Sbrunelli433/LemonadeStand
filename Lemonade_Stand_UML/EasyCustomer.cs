@@ -15,6 +15,10 @@ namespace Lemonade_Stand_UML
             SweetnessPreference = (0);
             SournessPreference = (0);
             IcePreference = (0);
+            if (willBuy == true)
+            {
+                BuyLemonade();
+            }
         }
         public override void BuyLemonade()
         {
