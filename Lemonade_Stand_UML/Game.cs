@@ -29,7 +29,6 @@ namespace Lemonade_Stand_UML
         {
             player = new Player();
             dayNames = new string[] {"monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday" };
-
             store = new Store();
             days = new List<Day>();
             for (int i = 0; i < 7; i++)
@@ -37,9 +36,7 @@ namespace Lemonade_Stand_UML
                 string dayName = dayNames[i];
                 days.Add(new Day(dayName));
             }
-
         }
-
 
         public void RunGame()
         {
@@ -77,9 +74,10 @@ namespace Lemonade_Stand_UML
             bool isOver = true;
             while (isOver)
             {
-                Console.WriteLine("What would you like to do before your day starts?");
-                Console.WriteLine("check inventory, go to Store, check recipe, check weather, check wallet, start day, exit to exit.");
-                string input = Console.ReadLine().ToLower();
+
+                string input = UserInterface.DisplayHomeScreen();
+
+
                 switch (input)
                 {
                     case "inventory":
@@ -102,20 +100,14 @@ namespace Lemonade_Stand_UML
                         isOver = false;
                         break;
                 }
-            
-
             }
-
         }
 
         public void StartDay(int i)
         {
-            //day.weather.SetCondition();
             Console.WriteLine("today is " + days[i].dayName);
             days[i].GenerateCustomersForSunny();
             Sales(days[i]);
-
-
         }
      }
 }
