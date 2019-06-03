@@ -7,6 +7,7 @@ namespace Lemonade_Stand_UML
 {
     public class Store
     {
+        public Player player;
         public decimal priceOfTwentyFive;
         public decimal priceOfFifty;
         public decimal priceOfOneHundred;
@@ -22,9 +23,9 @@ namespace Lemonade_Stand_UML
             }
         }
 
-        public  void DisplayStoreMenu()
+        public  void DisplayStoreMenu(Player player, Inventory inventory)
         {
-            Console.WriteLine("welcome to the store! What would you like to do? Buy Cups? Buy Ice? Buy Lemons? Buy Sugar?");
+            Console.WriteLine("welcome to the store! What would you like to do? Buy Cups? Buy Ice? Buy Lemons? Buy Sugar? Exit to exit.");
             string input = Console.ReadLine();
 
             //while loop here
@@ -34,26 +35,18 @@ namespace Lemonade_Stand_UML
             switch (input)
             {
                 case "cups":
-                    input = "Buy Cups";
-                    input = "Cups";
-                    //SellCups();
+                    SellCups(player, inventory);
                     break;
                 case "ice":
-                    input = "Buy Ice";
-                    input = "Ice";
-                    //SellIce();
+                    SellIce(player, inventory);
                     break;
                 case "lemons":
-                    input = "Buy Lemons";
-                    input = "Lemons";
-                    //SellLemons();
+                    SellLemons(player, inventory);
                     break;
                 case "sugar":
-                    input = "Buy Sugar";
-                    //SellSugar();
+                    SellSugar(player, inventory);
                     break;
                 case "exit":
-                    input = "Exit";
                     ExitStore();
                     break;
             }
@@ -226,7 +219,7 @@ namespace Lemonade_Stand_UML
         }
         public void ExitStore()
         {
-            //Player.Menu();
+            player.MainMenu();
         }
 
     }

@@ -7,8 +7,10 @@ namespace Lemonade_Stand_UML
 {
     public class Day
     {
-        public int weather;
         public List<Customer> customers;
+        public Weather weather;
+        public Recipe recipe;
+
 
         //public Random number generator
 
@@ -54,19 +56,19 @@ namespace Lemonade_Stand_UML
                         customers.Add(new EasyCustomer());
                         break;
                     case 2:
-                        new StingyCustomer();
+                        customers.Add(new StingyCustomer());
                         break;
                     case 3:
-                        new SourCustomer();
+                        customers.Add(new SourCustomer());
                         break;
                     case 4:
-                        new SweetCustomer();
+                        customers.Add(new SweetCustomer());
                         break;
                     case 5:
-                        new ColdCustomer();
+                        customers.Add(new ColdCustomer());
                         break;
                     case 6:
-                        new DifficultCustomer();
+                        customers.Add(new DifficultCustomer());
                         break;
                 }
             }
@@ -84,19 +86,19 @@ namespace Lemonade_Stand_UML
                         customers.Add(new EasyCustomer());
                         break;
                     case 2:
-                        new StingyCustomer();
+                        customers.Add(new StingyCustomer());
                         break;
                     case 3:
-                        new SourCustomer();
+                        customers.Add(new SourCustomer());
                         break;
                     case 4:
-                        new SweetCustomer();
+                        customers.Add(new SweetCustomer());
                         break;
                     case 5:
-                        new ColdCustomer();
+                        customers.Add(new ColdCustomer());
                         break;
                     case 6:
-                        new DifficultCustomer();
+                        customers.Add(new DifficultCustomer());
                         break;
                 }
             }
@@ -114,19 +116,19 @@ namespace Lemonade_Stand_UML
                         customers.Add(new EasyCustomer());
                         break;
                     case 2:
-                        new StingyCustomer();
+                        customers.Add(new StingyCustomer());
                         break;
                     case 3:
-                        new SourCustomer();
+                        customers.Add(new SourCustomer());
                         break;
                     case 4:
-                        new SweetCustomer();
+                        customers.Add(new SweetCustomer());
                         break;
                     case 5:
-                        new ColdCustomer();
+                        customers.Add(new ColdCustomer());
                         break;
                     case 6:
-                        new DifficultCustomer();
+                        customers.Add(new DifficultCustomer());
                         break;
                 }
             }
@@ -145,19 +147,19 @@ namespace Lemonade_Stand_UML
                         customers.Add(new EasyCustomer());
                         break;
                     case 2:
-                        new StingyCustomer();
+                        customers.Add(new StingyCustomer());
                         break;
                     case 3:
-                        new SourCustomer();
+                        customers.Add(new SourCustomer());
                         break;
                     case 4:
-                        new SweetCustomer();
+                        customers.Add(new SweetCustomer());
                         break;
                     case 5:
-                        new ColdCustomer();
+                        customers.Add(new ColdCustomer());
                         break;
                     case 6:
-                        new DifficultCustomer();
+                        customers.Add(new DifficultCustomer());
                         break;
                 }
             }
@@ -176,19 +178,19 @@ namespace Lemonade_Stand_UML
                         customers.Add(new EasyCustomer());
                         break;
                     case 2:
-                        new StingyCustomer();
+                        customers.Add(new StingyCustomer());
                         break;
                     case 3:
-                        new SourCustomer();
+                        customers.Add(new SourCustomer());
                         break;
                     case 4:
-                        new SweetCustomer();
+                        customers.Add(new SweetCustomer());
                         break;
                     case 5:
-                        new ColdCustomer();
+                        customers.Add(new ColdCustomer());
                         break;
                     case 6:
-                        new DifficultCustomer();
+                        customers.Add(new DifficultCustomer());
                         break;
                 }
             }
@@ -207,19 +209,19 @@ namespace Lemonade_Stand_UML
                         customers.Add(new EasyCustomer());
                         break;
                     case 2:
-                        new StingyCustomer();
+                        customers.Add(new StingyCustomer());
                         break;
                     case 3:
-                        new SourCustomer();
+                        customers.Add(new SourCustomer());
                         break;
                     case 4:
-                        new SweetCustomer();
+                        customers.Add(new SweetCustomer());
                         break;
                     case 5:
-                        new ColdCustomer();
+                        customers.Add(new ColdCustomer());
                         break;
                     case 6:
-                        new DifficultCustomer();
+                        customers.Add(new DifficultCustomer());
                         break;
                 }
             }

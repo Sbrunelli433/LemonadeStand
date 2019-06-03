@@ -12,6 +12,7 @@ namespace Lemonade_Stand_UML
         public int quantity;
         public string input;
         public decimal price;
+        public static int cupsPerPitcher = 15;
 
         public void DisplayRecipeMenu()
         {
@@ -86,6 +87,5 @@ namespace Lemonade_Stand_UML
         }
     }
 }
-//15 cups per pitcher
 //every qty of lemons and sugar used goes into 1 pitcher
 //ice per cup

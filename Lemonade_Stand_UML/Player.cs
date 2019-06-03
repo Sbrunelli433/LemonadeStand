@@ -7,7 +7,7 @@ namespace Lemonade_Stand_UML
 {
     public class Player
     {
-        public object inventory;
+        public Inventory inventory;
         public object recipe;
         public decimal wallet;
         public static string name;
@@ -65,33 +65,27 @@ namespace Lemonade_Stand_UML
         {
             Console.WriteLine("What would you like to do before your day starts?");
             Console.WriteLine("check inventory, go to Store, check recipe, check weather, check wallet, start day.");
-            string input = Console.ReadLine();
-            while (true)
+            string input = Console.ReadLine().ToLower();
+            switch(input)
             {
-                input = "inventory";
-                {
+                case "inventory":
                 Inventory.InventoryCheck();
-                }
-                input = "store";
-                {
-                Store.DisplayStoreMenu();
-                }
-                input = "Recipe";
-                {
+                    break;
+                case "store":
+                Store.DisplayStoreMenu(this, this.inventory);
+                    break;
+                case "Recipe":
                 Recipe.DisplayRecipeMenu();
-                }
-                input = "weather";
-                {
+                    break;
+                case "weather":
                 Weather.DisplayWeatherConditions();
-                }
-                input = "wallet";
-                {
+                    break;
+                case "wallet":
                 CheckWallet();
-                }
-                input = "start day";
-                {
+                    break;
+                case "start day":
                 ClickToStartDay();
-                }
+                    break;
             }
         }
 

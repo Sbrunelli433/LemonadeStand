@@ -7,22 +7,22 @@ namespace Lemonade_Stand_UML
 {
     public class Game
     {
-        private object player;
-        private object store;
-        public static List<double> day;
-        public static string name;
+        private Player player;
+        private Store store;
+        private Day day;
+        public static List<double> days;
+        public string name;
+
         public Player Player
         {
-            get { return Player;}
-            set { Player = value; }
+            get { return player;}
+            set { player = value; }
         }
-
         public Lemonade Lemonade
         {
             get { return Lemonade; }
             set { Lemonade = value; }
         }
-
         public Inventory Inventory
         {
             get { return Inventory; }
@@ -38,25 +38,26 @@ namespace Lemonade_Stand_UML
             get { return Recipe; }
             set { Recipe = value; }
         }
-        public Weather Weather
-        {
-            get { return Weather; }
-            set { Weather = value; }
-        }
+        //public Weather Weather
+        //{
+        //    get { return Weather; }
+        //    set { Weather = value; }
+        //}
 
 
         public Game()
         {
+            day = new Day();
             player = new Player();
             store = new Store();
-            day = new List<double>();
-                day.Add(1);
-                day.Add(2);
-                day.Add(3);
-                day.Add(4);
-                day.Add(5);
-                day.Add(6);
-                day.Add(7);
+            days = new List<double>();
+                days.Add(1);
+                days.Add(2);
+                days.Add(3);
+                days.Add(4);
+                days.Add(5);
+                days.Add(6);
+                days.Add(7);
         }
 
 
@@ -68,9 +69,10 @@ namespace Lemonade_Stand_UML
             Player.MainMenu();
             //gameplay FOR LOOP of days
             //counter ++ for each day
-            Weather.SetCondition();
-            Weather.DisplayWeatherConditions();
-            Store.DisplayStoreMenu();
+            day.weather.SetCondition();
+            day.weather.DisplayWeatherConditions();
+            //player.startDay();
+            Store.DisplayStoreMenu(player, player.inventory);
 
         }
 
