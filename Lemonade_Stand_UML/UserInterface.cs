@@ -8,5 +8,6 @@ namespace Lemonade_Stand_UML
 {
     class UserInterface
     {
+
     }
 }

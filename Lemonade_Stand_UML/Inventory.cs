@@ -7,6 +7,12 @@ namespace Lemonade_Stand_UML
 {
     public class Inventory
     {
+        private decimal price;
+        public decimal Price
+        {
+            get { return price; }
+            set { price = value; }
+        }
         private int cups;
         public int Cups
         {
@@ -34,28 +40,16 @@ namespace Lemonade_Stand_UML
             get { return sugar;  }
             set { sugar = value; }
         }
-        
+        public Game Game { get; set; }
+        public void DisplayInventory()
+        {
+            Console.WriteLine("you currently have " + cups + " cups in stock");
+            Console.WriteLine("you currently have " + ice + " ice cubes in stock");
+            Console.WriteLine("you currently have " + lemons + " lemons in stock");
+            Console.WriteLine("you currently have " + sugar + " cups of sugar in stock");
+            Console.ReadLine();
+        }
   
-        public void DisplayCupsInv()
-        {
-            Console.WriteLine("you currently have " + cups + "in stock");
-            Console.ReadLine();
-        }
-        public void DisplayIceInv()
-        {
-            Console.WriteLine("you currently have " + ice + "in stock");
-            Console.ReadLine();
-        }
-        public void DisplayLemonsInv()
-        {
-            Console.WriteLine("you currently have " + lemons + "in stock");
-            Console.ReadLine();
-        }
-        public void DisplaySugarInv()
-        {
-            Console.WriteLine("you currently have " + sugar + "in stock");
-            Console.ReadLine();
-        }
         public void InventoryCheck()
         {
             switch (Cups)

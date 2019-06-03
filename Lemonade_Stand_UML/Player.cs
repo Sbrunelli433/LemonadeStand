@@ -8,10 +8,11 @@ namespace Lemonade_Stand_UML
     public class Player
     {
         public Inventory inventory;
-        public object recipe;
+        public Recipe recipe;
         public decimal wallet;
-        public static string name;
+        public string name;
         private int pitcherOfLemonade;
+
         public int PitcherOfLemonade
         {
             get { return pitcherOfLemonade; }
@@ -24,75 +25,39 @@ namespace Lemonade_Stand_UML
         {
             inventory = new Inventory();
             recipe = new Recipe();
+
             wallet = 20.0m;
+
         }
 
-        public Game Game
-        {
-            get { return Game; }
-            set { Game = value;}
-        }
+        //public Game Game { get; set; }
+        //public Lemonade Lemonade { get; set; }
 
-        public Lemonade Lemonade
-        {
-            get { return Lemonade; }
-            set { Lemonade = value; }
-        }
+        //public Inventory Inventory { get; set; }
 
-        public Inventory Inventory
-        {
-            get { return Inventory; }
-            set { Inventory = value; }
-        }
-        public Store Store
-        {
-            get { return Store; }
-            set { Store = value; }
-        }
-        public Recipe Recipe
-        {
-            get { return Recipe; }
-            set { Recipe = value; }
-        }
-        public Weather Weather
-        {
-            get { return Weather; }
-            set { Weather = value; }
-        }
+        //public Store Store{ get; set; }
 
 
-        public void MainMenu()
+        //public Recipe Recipe { get; set; }
+
+        //public Weather Weather { get; set; }
+
+
+
+        
+
+        public void DisplayWallet()
         {
-            Console.WriteLine("What would you like to do before your day starts?");
-            Console.WriteLine("check inventory, go to Store, check recipe, check weather, check wallet, start day.");
-            string input = Console.ReadLine().ToLower();
-            switch(input)
-            {
-                case "inventory":
-                Inventory.InventoryCheck();
-                    break;
-                case "store":
-                Store.DisplayStoreMenu(this, this.inventory);
-                    break;
-                case "Recipe":
-                Recipe.DisplayRecipeMenu();
-                    break;
-                case "weather":
-                Weather.DisplayWeatherConditions();
-                    break;
-                case "wallet":
-                CheckWallet();
-                    break;
-                case "start day":
-                ClickToStartDay();
-                    break;
-            }
+            Console.WriteLine("You currently have $" + wallet + " in your wallet");
+            Console.ReadLine();
+            //UI.DisplayCash();
+            //displays current cash in wallet
         }
+
 
         public void CheckWallet()
         {
-            //UI.DisplayCash();
-            //displays current cash in wallet
+
         }
         public void ClickToStartDay()
         {

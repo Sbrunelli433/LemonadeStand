@@ -7,30 +7,31 @@ namespace Lemonade_Stand_UML
 {
     public class Store
     {
-        public Player player;
         public decimal priceOfTwentyFive;
         public decimal priceOfFifty;
         public decimal priceOfOneHundred;
         private decimal cost;
         private int quantity;
         public string input;
+        public Player player;
 
-        public Game Game
+        public Store()
         {
-            get => default;
-            set
-            {
-            }
+            priceOfTwentyFive = .75m;
+            priceOfFifty = 1.25m;
+            priceOfOneHundred = 2.25m;
+            
         }
+        public Game Game { get; set; }
+  
 
-        public  void DisplayStoreMenu(Player player, Inventory inventory)
+        public void DisplayStoreMenu(Player player, Inventory inventory)
         {
             Console.WriteLine("welcome to the store! What would you like to do? Buy Cups? Buy Ice? Buy Lemons? Buy Sugar? Exit to exit.");
-            string input = Console.ReadLine();
+            string input = Console.ReadLine().ToLower();
 
             //while loop here
             //bool true
-            //bool false breaks out of DisplayStoreMenu() and back to Player.Menu();
             //reference MOST WANTED MENU LOOP
             switch (input)
             {
@@ -47,7 +48,6 @@ namespace Lemonade_Stand_UML
                     SellSugar(player, inventory);
                     break;
                 case "exit":
-                    ExitStore();
                     break;
             }
         }
@@ -59,33 +59,36 @@ namespace Lemonade_Stand_UML
             quantity = Int32.Parse(Console.ReadLine());
             switch (quantity)
             {
-                case 1:
+                case 25:
                     quantity = 25;
                     cost = priceOfTwentyFive;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Cups += quantity;
-                    Console.WriteLine("you purchased 25 Cups, for " + .75m + "and have been added to your inventory. Press any key to continue.");
+                    player.inventory.Cups += quantity;
+                    Console.WriteLine("you purchased 25 Cups, for " + .75m + " and have been added to your inventory. Press any key to continue.");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
 
-                case 2:
+                case 50:
                     quantity = 50;
                     cost = priceOfFifty;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Cups += quantity;
-                    Console.WriteLine("you purchased 50 Cups, for " + 1.25m + "and have been added to your inventory. Press any key to continue.");
+                    player.inventory.Cups += quantity;
+                    Console.WriteLine("you purchased 50 Cups, for " + 1.25m + " and have been added to your inventory. Press any key to continue.");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
-                case 3:
+                case 100:
                     quantity = 100;
                     cost = priceOfOneHundred;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Cups += quantity;
-                    Console.WriteLine("you purchased 100 Cups, for " + 2.25m + "and have been added to your inventory. Press any key to continue.");
+                    player.inventory.Cups += quantity;
+                    Console.WriteLine("you purchased 100 Cups, for " + 2.25m + " and have been added to your inventory. Press any key to continue.");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
                 default:
                     Console.WriteLine("invalid input, please type '25', '50' or '100'");
@@ -102,33 +105,36 @@ namespace Lemonade_Stand_UML
             quantity = Int32.Parse(Console.ReadLine());
             switch (quantity)
             {
-                case 1:
+                case 25:
                     quantity = 25;
                     cost = priceOfTwentyFive;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Ice += quantity;
+                    player.inventory.Ice += quantity;
                     Console.WriteLine("you purchased 25 ice cubes, for " + .75m + "and have been added to your inventory");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
 
-                case 2:
+                case 50:
                     quantity = 50;
                     cost = priceOfFifty;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Ice += quantity;
+                    player.inventory.Ice += quantity;
                     Console.WriteLine("you purchased 50 Cups, for " + 1.25m + "and have been added to your inventory");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
-                case 3:
+                case 100:
                     quantity = 100;
                     cost = priceOfOneHundred;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Ice += quantity;
+                    player.inventory.Ice += quantity;
                     Console.WriteLine("you purchased 100 Cups, for " + 2.25m + "and have been added to your inventory");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
                 default:
                     Console.WriteLine("invalid input, please type 25, 50 or 100");
@@ -142,33 +148,36 @@ namespace Lemonade_Stand_UML
             quantity = Int32.Parse(Console.ReadLine());
             switch (quantity)
             {
-                case 1:
+                case 25:
                     quantity = 25;
                     cost = priceOfTwentyFive;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Lemons += quantity;
+                    player.inventory.Lemons += quantity;
                     Console.WriteLine("you purchased 25 Lemons, for " + .75m + "and have been added to your inventory");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
 
-                case 2:
+                case 50:
                     quantity = 50;
                     cost = priceOfFifty;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Lemons += quantity;
+                    player.inventory.Lemons += quantity;
                     Console.WriteLine("you purchased 50 Lemons, for " + 1.25m + "and have been added to your inventory");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
-                case 3:
+                case 100:
                     quantity = 100;
                     cost = priceOfOneHundred;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Lemons += quantity;
+                    player.inventory.Lemons += quantity;
                     Console.WriteLine("you purchased 100 Lemons, for " + 2.25m + "and have been added to your inventory");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
                 default:
                     Console.WriteLine("invalid input, please type 25, 50 or 100");
@@ -183,33 +192,36 @@ namespace Lemonade_Stand_UML
             quantity = Int32.Parse(Console.ReadLine());
             switch (quantity)
             {
-                case 1:
+                case 25:
                     quantity = 25;
                     cost = priceOfTwentyFive;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Sugar += quantity;
+                    player.inventory.Sugar += quantity;
                     Console.WriteLine("you purchased 25 cups of sugar, for " + .75m + "and have been added to your inventory");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
 
-                case 2:
+                case 50:
                     quantity = 50;
                     cost = priceOfFifty;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Sugar += quantity;
+                    player.inventory.Sugar += quantity;
                     Console.WriteLine("you purchased 50 Cups of sugar, for " + 1.25m + "and have been added to your inventory");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
-                case 3:
+                case 100:
                     quantity = 100;
                     cost = priceOfOneHundred;
                     player.CheckWallet();
                     player.wallet -= cost;
-                    inventory.Sugar += quantity;
+                    player.inventory.Sugar += quantity;
                     Console.WriteLine("you purchased 100 Cups of sugar, for " + 2.25m + "and have been added to your inventory");
                     Console.ReadLine();
+                    DisplayStoreMenu(player, inventory);
                     break;
                 default:
                     Console.WriteLine("invalid input, please type 25, 50 or 100");
@@ -217,10 +229,5 @@ namespace Lemonade_Stand_UML
                     break;
             }
         }
-        public void ExitStore()
-        {
-            player.MainMenu();
-        }
-
     }
 }

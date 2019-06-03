@@ -20,14 +20,14 @@
   <Class Name="Lemonade_Stand_UML.Inventory">
     <Position X="10.25" Y="4.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AABAiAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAQAAAQUAg=</HashCode>
+      <HashCode>AABAiAAAAIAEAAAAAAAAAAAAAAgAAAAAAAAQAAAAUAg=</HashCode>
       <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Store">
     <Position X="7.25" Y="2.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>gAQAAACACAQAAAAAAAAAAAAQAAgQABCAAAAIAAACAAI=</HashCode>
+      <HashCode>gAQAAACACAQAAAAAAAAAAAAQAAgQABCBAAAIAAACAAA=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -96,14 +96,14 @@
   <Class Name="Lemonade_Stand_UML.Recipe">
     <Position X="17.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAACAIQCAAAAABCAAAAAAIAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAAAAAAAAACAIQCAAAAABCIAAAAAIAAAAA=</HashCode>
       <FileName>Recipe.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Game">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAIAAAAAAAAAAAAAEAAQBAAQAAAAAAAA=</HashCode>
+      <HashCode>AAAgAAAAIAAAAIAAEAAAAAAQAAAEAAQLAAQAA0AAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -113,14 +113,9 @@
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAgAAAQAAAAAAAIAAAAAoMAAACAAAAEgAAAAA=</HashCode>
+      <HashCode>AAAAAAAAgAAAQAAAAAAAIBAAAAAEABACAAAAEgAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Game" />
-      <Property Name="Lemonade" />
-      <Property Name="Inventory" />
-    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

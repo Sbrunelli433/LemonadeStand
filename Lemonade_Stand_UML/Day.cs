@@ -9,8 +9,6 @@ namespace Lemonade_Stand_UML
     {
         public List<Customer> customers;
         public Weather weather;
-        public Recipe recipe;
-
 
         //public Random number generator
 
@@ -25,6 +23,7 @@ namespace Lemonade_Stand_UML
                 new ColdCustomer(),
                 new DifficultCustomer(),
             };
+            weather = new Weather();
         }
 
         public Game Game
