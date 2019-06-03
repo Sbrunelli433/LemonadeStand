@@ -7,8 +7,9 @@ namespace Lemonade_Stand_UML
 {
     public class Game
     {
-        public static List<double> days;
+        public static List<Day> days;
         public string name;
+        public string[] dayNames;
 
         private Player player;
         public Player Player
@@ -23,41 +24,32 @@ namespace Lemonade_Stand_UML
             get { return store; }
             set { store = value; }
         }
-        private Day day;
-        public Day Day
-        {
-            get { return day; }
-            set { day = value; }
-        }
 
         public Game()
         {
-            day = new Day();
             player = new Player();
+            dayNames = new string[] {"monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday" };
+
             store = new Store();
-            days = new List<double>();
-            days.Add(1);
-            days.Add(2);
-            days.Add(3);
-            days.Add(4);
-            days.Add(5);
-            days.Add(6);
-            days.Add(7);
+            days = new List<Day>();
+            for (int i = 0; i < 7; i++)
+            {
+                string dayName = dayNames[i];
+                days.Add(new Day(dayName));
+            }
+
         }
 
 
         public void RunGame()
         {
-
             InputName();
             DisplayRules();
-            MainMenu();
-            //gameplay FOR LOOP of days
-            //counter ++ for each day
-            day.weather.SetCondition();
-            //store.DisplayStoreMenu(player, player.inventory);
-            StartDay();
-
+            for (int i = 0; i < 7; i++)
+            {
+                MainMenu(i);
+                days[i].weather.SetCondition();
+            }
         }
 
         public void InputName()
@@ -71,7 +63,16 @@ namespace Lemonade_Stand_UML
             Console.WriteLine("If you do not run out of money, this game will lasy 7 days. Press any key to go to the menu.");
             Console.ReadLine();
         }
-        public void MainMenu()
+        public void Sales(Day day)
+        {
+            foreach (var customer in day.customers)
+            {
+                customer.BuyLemonade();
+                player.recipe.cupsPerPitcher--;
+                player.wallet += player.recipe.price;
+            }
+        }
+        public void MainMenu(int i)
         {
             bool isOver = true;
             while (isOver)
@@ -91,15 +92,13 @@ namespace Lemonade_Stand_UML
                         player.recipe.DisplayRecipeMenu();
                         break;
                     case "weather":
-                        day.weather.SetCondition();
+                        days[i].weather.SetCondition();
                         break;
                     case "wallet":
                         player.DisplayWallet();
                         break;
                     case "start day":
-                        StartDay();
-                        break;
-                    case "Exit":
+                        StartDay(i);
                         isOver = false;
                         break;
                 }
@@ -109,8 +108,13 @@ namespace Lemonade_Stand_UML
 
         }
 
-        public void StartDay()
+        public void StartDay(int i)
         {
+            //day.weather.SetCondition();
+            Console.WriteLine("today is " + days[i].dayName);
+            days[i].GenerateCustomersForSunny();
+            Sales(days[i]);
+
 
         }
      }

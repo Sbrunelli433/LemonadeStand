@@ -9,11 +9,13 @@ namespace Lemonade_Stand_UML
     {
         public List<Customer> customers;
         public Weather weather;
+        public string dayName;
 
         //public Random number generator
 
-        public Day()
+        public Day(string dayName)
         {
+            this.dayName = dayName;
             customers = new List<Customer>()
             {
                 new EasyCustomer(),
@@ -42,15 +44,7 @@ namespace Lemonade_Stand_UML
             }
         }
         
-        public void Sales(Player player)
-        {
-            foreach (var customer in customers)
-            {
-                customer.BuyLemonade();
-                player.recipe.cupsPerPitcher--;
-                player.wallet += player.recipe.price;
-            }
-        }
+
        
         public void GenerateCustomersForSunny()
         {
@@ -234,15 +228,11 @@ namespace Lemonade_Stand_UML
                         break;
                 }
             }
-
         }
         public void EndDay()
         {
             //display cups sold
             //display end of day money
-            //
-            
-       
         }
     }
 }
