@@ -11,13 +11,6 @@ namespace Lemonade_Stand_UML
         public Recipe recipe;
         public decimal wallet;
         public string name;
-        //private bool pitcherOfLemonade;
-
-        //public bool PitcherOfLemonade
-        //{
-        //    get { return pitcherOfLemonade; }
-        //    set { pitcherOfLemonade = value; }
-        //}
         public string input;
 
         public bool hasPitcherOfLemonade = true;
@@ -38,12 +31,6 @@ namespace Lemonade_Stand_UML
 
         //public Recipe Recipe { get; set; }
 
- 
-
-
-
-        
-
         public void DisplayWallet()
         {
             Console.WriteLine("You currently have $" + wallet + " in your wallet");
@@ -61,10 +48,7 @@ namespace Lemonade_Stand_UML
         {
             Console.WriteLine("you currently have $" + wallet + "in your wallet");
         }
-        public void DayOneWallet()
-        {
-            Console.WriteLine("It is the end of day 1, you currently have $" + wallet + " in your wallet.");
-        }
+
         public void ClickToStartDay()
         {
 

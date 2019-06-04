@@ -28,14 +28,6 @@ namespace Lemonade_Stand_UML
             weather = new Weather();
         }
 
-        public Game Game
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         public Weather Weather
         {
             get => default;
@@ -43,9 +35,7 @@ namespace Lemonade_Stand_UML
             {
             }
         }
-        
 
-       
         public void GenerateCustomersForSunny()
         {
             Random rng = new Random();

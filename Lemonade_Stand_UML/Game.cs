@@ -46,7 +46,12 @@ namespace Lemonade_Stand_UML
             {
                 MainMenu(i);
                 days[i].weather.SetCondition();
+                Console.WriteLine("this is the end of the day... you made X amount of money. Check the weather and your inventory to see what you need for the next day");
+                Console.ReadLine();
             }
+            Console.WriteLine("this is the end of the 7 days. Congrats! You did it! #GetScwifty");
+            Console.ReadLine();
+            
         }
 
         public void InputName()
@@ -64,7 +69,7 @@ namespace Lemonade_Stand_UML
         {
             foreach (var customer in day.customers)
             {
-                customer.BuyLemonade();
+                customer.BuyLemonade(day.weather, player.recipe);
                 player.recipe.cupsPerPitcher--;
                 player.wallet += player.recipe.price;
             }
@@ -93,6 +98,9 @@ namespace Lemonade_Stand_UML
                         break;
                     case "weather":
                         days[i].weather.SetCondition();
+                        UserInterface.DisplayWeatherConditions(days[i].weather);
+                        //Console.WriteLine("The weather is " + days[i].weather.condition + " and it is " + days[i].weather.temperature + " degrees out");
+                        Console.ReadLine();
                         break;
                     case "wallet":
                         player.DisplayWallet();
@@ -115,7 +123,7 @@ namespace Lemonade_Stand_UML
         }
         public void DayEnd(int i)
         {
-            Console.WriteLine("it is the end of " + days[i].dayName + "you made a total of " );
+            Console.WriteLine("it is the end of " + days[i].dayName + " you made a total of " );
         }
      }
 }

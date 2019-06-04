@@ -14,8 +14,8 @@ namespace Lemonade_Stand_UML
         public Weather()
         {
             Random rng = new Random();
-            //temperature
             rng.Next(50, 99);
+            //temperature
 
             conditions = new List<string>();
             conditions.Add("sunny");
@@ -32,10 +32,9 @@ namespace Lemonade_Stand_UML
         {
             Random rng = new Random();
             int conditionIndex = rng.Next(0, conditions.Count);
-            condition = conditions[conditionIndex];
-            double setTemperature = rng.Next(50, 99);
-            temperature = setTemperature;
-            Console.ReadLine();
+            condition = "sunny";
+            //condition = conditions[conditionIndex];
+            temperature = rng.Next(50, 99);
         }
     }
 }

@@ -7,16 +7,6 @@
       <FileName>Weather.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Lemonade_Stand_UML.Customer">
-    <Position X="4.25" Y="4.75" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>BAAAAAQAIAAQAAAACARAIAAAAAAAACAAACAgBBAAAAQ=</HashCode>
-      <FileName>Customer.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Day" />
-    </ShowAsAssociation>
-  </Class>
   <Class Name="Lemonade_Stand_UML.Inventory">
     <Position X="10.25" Y="4.75" Width="1.75" />
     <TypeIdentifier>
@@ -37,7 +27,7 @@
   <Class Name="Lemonade_Stand_UML.Day">
     <Position X="1.25" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAFCAAAAAAEAAQEAACAABgAAAAQAAACAAAAAAA=</HashCode>
+      <HashCode>AAAAAEAFCAAAAAAAAAQEAAiAABAAAAAQAAACAAAAAAA=</HashCode>
       <FileName>Day.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -56,13 +46,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EasyCustomer.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lemonade_Stand_UML.StingyCustomer">
-    <Position X="2" Y="9.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StingyCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.SourCustomer">
@@ -96,14 +79,14 @@
   <Class Name="Lemonade_Stand_UML.Recipe">
     <Position X="17.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQBBAAAAAAAAAgAAAAACAIQCAAAAABCKAAAAAIAAAAE=</HashCode>
+      <HashCode>AQBBAAAAAAAAAgAAAAACAIQCAAAAABCKAAAAAIAAIAE=</HashCode>
       <FileName>Recipe.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand_UML.Game">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAIAAAAIAAEAAAAAAQAAAEAAQBAAQAAUAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAAAYAAAAAABACQAAAEAAQBAAQAAUAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -113,8 +96,15 @@
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAgAAAQAAAAAAAIAAAAAAEAJACAAAAggAAAAA=</HashCode>
+      <HashCode>AAAAAAAAgAAAQAAAAAAAIAAAAAAEAJACAAAAggAAAQA=</HashCode>
       <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonade_Stand_UML.Customer" Collapsed="true">
+    <Position X="4.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAACQAAAAEAAA=</HashCode>
+      <FileName>Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

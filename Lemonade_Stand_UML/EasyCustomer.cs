@@ -9,20 +9,25 @@ namespace Lemonade_Stand_UML
     {
         public EasyCustomer()
         {
-            WeatherPreference = "sunny";
-            MaxPrice = 99m;
-            MinPrice = .01m;
-            SweetnessPreference = (0);
-            SournessPreference = (0);
-            IcePreference = (0);
-            if (willBuy == true)
+            //WeatherPreference = "sunny";
+            //MaxPrice = 99m;
+            //MinPrice = .01m;
+            //SweetnessPreference = (0);
+            //SournessPreference = (0);
+            //IcePreference = (0);
+            double minValue = 50;
+            double maxValue = 99;
+            Temperature = minValue - maxValue;
+        }
+        public override void BuyLemonade(Weather weather, Recipe recipe)
+        {
+            if (true)
             {
-                BuyLemonade();
+                recipe.cupsPerPitcher--;
             }
         }
-        public override void BuyLemonade()
-        {
-            
-        }
+
+
+
     }
 }

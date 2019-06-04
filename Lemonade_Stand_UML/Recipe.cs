@@ -87,13 +87,27 @@ namespace Lemonade_Stand_UML
             Console.ReadLine();
         }
 
-        public void MixLemonade(Inventory inventory, bool canSell)
+        public void MixLemonade(Inventory inventory, Customer customer, Weather weather, Recipe recipe)
         {
             inventory.Ice -= icePerPitcher;
             inventory.Lemons -= lemonsPerPitcher;
             inventory.Sugar -= sugarPerPitcher;
             cupsPerPitcher = 15;
-            canSell = true;
+            
+
+
+            //if (customer.BuyLemonade(Weather weather, Recipe recipe) = true)
+            //{
+            //    cupsPerPitcher--;
+            //}
+            //else (cupsPerPitcher = 0);
+            //{
+            //    inventory.Ice -= icePerPitcher;
+            //    inventory.Lemons -= lemonsPerPitcher;
+            //    inventory.Sugar -= sugarPerPitcher;
+            //    cupsPerPitcher = 15;
+            //    throw new NotImplementedException();
+            //}
             
         }
         public void InventoryCheck(Inventory inventory)
@@ -103,12 +117,12 @@ namespace Lemonade_Stand_UML
                 Console.WriteLine("you cannot make any more pitchers of lemonade!");
             }
         }
-        public void CanSellLemonade(Customer customer, bool canSell)
-        {    if(canSell = false)
-            {
-                customer.BuyLemonade(); 
-            }
-        }
+        //public void CanSellLemonade(Customer customer, bool canSell)
+        //{    if(canSell = false)
+        //    {
+        //        customer.BuyLemonade(); 
+        //    }
+        //}
         public void DisplayPrice()
         {
             Console.WriteLine("the price per cup for today is set at " + price);
