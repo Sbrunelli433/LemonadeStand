@@ -18,6 +18,7 @@ namespace Lemonade_Stand_UML
 
         public void DisplayRecipeMenu()
         {
+            bool canSell = false;
             bool isOut = true;
             while (isOut)
             {
@@ -86,12 +87,14 @@ namespace Lemonade_Stand_UML
             Console.ReadLine();
         }
 
-        public void MixLemonade(Inventory inventory)
+        public void MixLemonade(Inventory inventory, bool canSell)
         {
             inventory.Ice -= icePerPitcher;
             inventory.Lemons -= lemonsPerPitcher;
             inventory.Sugar -= sugarPerPitcher;
             cupsPerPitcher = 15;
+            canSell = true;
+            
         }
         public void InventoryCheck(Inventory inventory)
         {
@@ -99,7 +102,12 @@ namespace Lemonade_Stand_UML
             {
                 Console.WriteLine("you cannot make any more pitchers of lemonade!");
             }
-
+        }
+        public void CanSellLemonade(Customer customer, bool canSell)
+        {    if(canSell = false)
+            {
+                customer.BuyLemonade(); 
+            }
         }
         public void DisplayPrice()
         {

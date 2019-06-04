@@ -76,6 +76,8 @@ namespace Lemonade_Stand_UML
             {
 
                 string input = UserInterface.DisplayHomeScreen();
+                //UserInterface.DisplayWeatherConditions(Weather weather);
+
 
 
                 switch (input)
@@ -107,7 +109,13 @@ namespace Lemonade_Stand_UML
         {
             Console.WriteLine("today is " + days[i].dayName);
             days[i].GenerateCustomersForSunny();
+
             Sales(days[i]);
+            DayEnd(i);
+        }
+        public void DayEnd(int i)
+        {
+            Console.WriteLine("it is the end of " + days[i].dayName + "you made a total of " );
         }
      }
 }

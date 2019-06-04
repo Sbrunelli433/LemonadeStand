@@ -50,7 +50,13 @@ namespace Lemonade_Stand_UML
         {
             bool willBuy = true;
             if (willBuy == true)
-            { }
+            {
+                BuyLemonade();
+            }
+            else
+            {
+                willBuy = false;
+            }
         }
 
 

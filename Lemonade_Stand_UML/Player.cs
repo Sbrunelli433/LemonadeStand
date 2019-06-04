@@ -55,7 +55,15 @@ namespace Lemonade_Stand_UML
 
         public void CheckWallet()
         {
-
+            Console.WriteLine(wallet);
+        }
+        public void StartingWallet()
+        {
+            Console.WriteLine("you currently have $" + wallet + "in your wallet");
+        }
+        public void DayOneWallet()
+        {
+            Console.WriteLine("It is the end of day 1, you currently have $" + wallet + " in your wallet.");
         }
         public void ClickToStartDay()
         {

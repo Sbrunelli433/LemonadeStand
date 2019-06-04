@@ -35,7 +35,6 @@ namespace Lemonade_Stand_UML
             condition = conditions[conditionIndex];
             double setTemperature = rng.Next(50, 99);
             temperature = setTemperature;
-            Console.WriteLine("the weather for this condition is " + condition + " ." + "The temperature is " + temperature + " press any key to return to menu");
             Console.ReadLine();
         }
     }
