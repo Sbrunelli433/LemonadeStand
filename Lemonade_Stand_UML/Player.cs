@@ -25,11 +25,6 @@ namespace Lemonade_Stand_UML
             wallet = 20.0m;
 
         }
-        //public Lemonade Lemonade { get; set; }
-
-        //public Inventory Inventory { get; set; }
-
-        //public Recipe Recipe { get; set; }
 
         public void DisplayWallet()
         {
@@ -44,11 +39,6 @@ namespace Lemonade_Stand_UML
         {
             Console.WriteLine(wallet);
         }
-        public void StartingWallet()
-        {
-            Console.WriteLine("you currently have $" + wallet + "in your wallet");
-        }
-
         public void ClickToStartDay()
         {
 

@@ -46,6 +46,7 @@ namespace Lemonade_Stand_UML
             {
                 MainMenu(i);
                 days[i].weather.SetCondition();
+                //UserInterface.DisplayDailyReport();
                 Console.WriteLine("this is the end of the day... you made X amount of money. Check the weather and your inventory to see what you need for the next day");
                 Console.ReadLine();
             }
@@ -82,13 +83,10 @@ namespace Lemonade_Stand_UML
 
                 string input = UserInterface.DisplayHomeScreen();
                 //UserInterface.DisplayWeatherConditions(Weather weather);
-
-
-
                 switch (input)
                 {
                     case "inventory":
-                        player.inventory.DisplayInventory();
+                        player.DisplayInventory();
                         break;
                     case "store":
                         store.DisplayStoreMenu(player, player.inventory);

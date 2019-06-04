@@ -1,0 +1,17 @@
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Lemonade_Stand_UML_Test.dll
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Lemonade_Stand_UML_Test.pdb
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Lemonade_Stand_UML.exe
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Lemonade_Stand_UML.pdb
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Lemonade_Stand_UML.exe.config
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\obj\Debug\Lemonade_Stand_UML_Test.csprojAssemblyReference.cache
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\obj\Debug\Lemonade_Stand_UML_Test.csproj.CoreCompileInputs.cache
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\obj\Debug\Lemonade_Stand_UML_Test.csproj.CopyComplete
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\obj\Debug\Lemonade_Stand_UML_Test.dll
+C:\Users\brune\Desktop\DCC\Week_04\LemonadeStand\Lemonade_Stand_UML_Test\obj\Debug\Lemonade_Stand_UML_Test.pdb
